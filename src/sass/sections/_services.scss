@@ -1,0 +1,144 @@
+.services {
+  grid-column: full-start / full-end;
+  margin-bottom: 13rem;
+
+  @include respond(mdlg) {
+    margin-bottom: 20rem;
+  }
+
+  &__cards {
+    grid-column: content-start / content-end;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @include respond(md) {
+      flex-direction: row;
+    }
+
+    @include respond(mdlg) {
+      gap: 2.4rem;
+    }
+  }
+
+  &__quote {
+    position: relative;
+    margin-top: 6.8rem;
+    grid-column: full-start / full-end;
+
+    &-container {
+      grid-column: full-start / full-end;
+
+      @include respond(md) {
+        display: flex;
+        grid-column: content-start / content-end;
+        align-items: center;
+        gap: 8rem;
+      }
+
+      @include respond(mdlg) {
+        gap: 12rem;
+      }
+
+      @include respond(xl) {
+        gap: 14rem;
+      }
+    }
+
+    &-text {
+      position: relative;
+      grid-column: content-start / content-end;
+      font-family: $font-secondary;
+      overflow: hidden;
+
+      @include respond(md) {
+        flex: 2;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        max-width: 36rem;
+        z-index: 0;
+        -webkit-animation: rotate 20s normal linear infinite;
+        animation: rotate 20s normal linear infinite;
+        transform: translate(-50%, -50%);
+
+        @include respond(sm) {
+          max-width: 28rem;
+        }
+
+        @include respond(smmd) {
+          max-width: 24rem;
+        }
+
+        @include respond(md) {
+          max-width: 32rem;
+        }
+
+        @include respond(mdlg) {
+          max-width: 40rem;
+        }
+
+        @include respond(xl) {
+          max-width: 52rem;
+        }
+      }
+
+      h3 {
+        position: relative;
+        margin-bottom: 3.2rem;
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 4.8rem;
+        z-index: 1;
+
+        @include respond(xl) {
+          font-size: 4.2rem;
+          line-height: 6rem;
+        }
+      }
+
+      p {
+        position: relative;
+        z-index: 1;
+        color: rgba($color: $color-white, $alpha: 0.3);
+        line-height: 3rem;
+
+        @include respond(xl) {
+          font-size: 2rem;
+          line-height: 3.6rem;
+        }
+
+        span {
+          color: $color-white;
+        }
+      }
+    }
+
+    &-image {
+      margin-top: 6rem;
+      grid-column: full-start / full-end;
+      height: 32rem;
+      background-color: grey;
+
+      @include respond(md) {
+        flex: 3;
+        margin-top: 0;
+        border-radius: 2.4rem;
+        height: 40rem;
+      }
+
+      @include respond(mdlg) {
+        height: 48rem;
+      }
+
+      @include respond(xl) {
+        height: 56rem;
+      }
+    }
+  }
+}

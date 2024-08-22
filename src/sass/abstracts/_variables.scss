@@ -1,0 +1,35 @@
+// Fonts
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Figtree', sans-serif;
+$font-tertiary: 'PixelFont', sans-serif;
+
+// Font Sizes
+
+// Font Weight
+
+// Colors
+$color-white: #fafafa;
+$color-black: #121212;
+$color-highlight: #5cddff;
+$color-green: #58c556;
+$color-blue: #1da4ff;
+$color-purple: #743ecc;
+
+// Screen size breakpoints
+$bp-xs: 376px; //mobile (max-width)
+$bp-sm: 500px;
+$bp-smmd: 768px; //tablet
+$bp-md: 1024px; //desktop
+$bp-mdlg: 1280px;
+$bp-lg: 1440px;
+$bp-xl: 1920px;
+
+// Grid layout
+$gutter: 2rem;
+$gutter-sm: 1.6rem;
+
+$calculate-width-sm: calc((100% - $gutter-sm) / 4 - $gutter-sm);
+$calculate-width-smmd: calc(72.8rem / 8 - $gutter-sm);
+$calculate-width-md: calc(96rem / 12 - $gutter);
+$calculate-width-mdlg: calc(128rem / 12 - $gutter);
+$calculate-width-xl: calc(179.2rem / 12 - $gutter);

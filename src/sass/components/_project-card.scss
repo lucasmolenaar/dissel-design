@@ -1,0 +1,160 @@
+.project-card {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid rgba($color: $color-white, $alpha: 0.2);
+  background-color: transparent;
+  border-radius: 1.6rem;
+
+  &:first-of-type {
+    @include respond(md) {
+      grid-column: 1 / 5;
+    }
+
+    @include respond(mdlg) {
+      grid-column: 1 / 7;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @include respond(md) {
+      grid-column: 5 / 9;
+    }
+
+    @include respond(mdlg) {
+      grid-column: 7 / 10;
+    }
+  }
+
+  &:nth-of-type(3) {
+    @include respond(md) {
+      grid-column: 9 / -1;
+    }
+
+    @include respond(mdlg) {
+      grid-column: 10 / -1;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    border: 1px solid rgba($color: $color-white, $alpha: 0.2);
+    border-radius: 1.2rem;
+    background-color: rgba($color: $color-white, $alpha: 0.05);
+
+    &-title {
+      font-family: $font-secondary;
+      font-size: 1.8rem;
+
+      @include respond(md) {
+        font-weight: 300;
+      }
+
+      @include respond(mdlg) {
+        font-size: 2rem;
+      }
+
+      @include respond(xl) {
+        font-size: 2.4rem;
+      }
+    }
+
+    &-year {
+      font-family: $font-tertiary;
+      font-size: 1.4rem;
+
+      @include respond(mdlg) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(xl) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__bottom {
+    background-color: #343434;
+    height: 34rem;
+    width: 100%;
+    border: 1px solid rgba($color: $color-white, $alpha: 0.2);
+    border-radius: 1.2rem;
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+
+    @include respond(md) {
+      height: 46rem;
+    }
+
+    @include respond(xl) {
+      height: 58.2rem;
+    }
+
+    &--big {
+      height: 46rem;
+
+      @include respond(xl) {
+        height: 58.2rem;
+      }
+    }
+
+    &-content {
+      font-family: $font-secondary;
+      padding: 2rem 1.6rem;
+      margin-top: auto;
+    }
+
+    &-title {
+      font-size: 2rem;
+    }
+
+    &-subtitle {
+      font-size: 1.8rem;
+      font-style: italic;
+      font-weight: 300;
+      margin-top: 0.4rem;
+    }
+
+    &-labels {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    &-label {
+      @include flexCenter;
+      padding: 0.8rem 1.2rem;
+      border: 1.5px solid $color-white;
+      border-radius: 100px;
+      font-size: 1.4rem;
+      flex-wrap: wrap;
+
+      @include respond(xs) {
+        font-size: 1.2rem;
+      }
+
+      @include respond(md) {
+        font-size: 1rem;
+      }
+
+      @include respond(mdlg) {
+        font-size: 1.4rem;
+      }
+
+      &--ux {
+        border-color: $color-green;
+      }
+
+      &--design {
+        border-color: $color-blue;
+      }
+
+      &--dev {
+        border-color: $color-purple;
+      }
+    }
+  }
+}

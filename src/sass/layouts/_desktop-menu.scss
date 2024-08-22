@@ -1,0 +1,28 @@
+.desktop-menu {
+  display: none;
+  align-items: center;
+  gap: 4.2rem;
+
+  @include respond(md) {
+    display: flex;
+  }
+
+  li {
+    a {
+      font-family: $font-primary;
+      color: $color-white;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__talk {
+    padding: 1rem 1.2rem;
+    border-radius: 100rem;
+    border: 1px solid $color-white;
+
+    a {
+      @include flexCenter;
+      gap: 1rem;
+    }
+  }
+}

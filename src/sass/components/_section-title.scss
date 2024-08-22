@@ -1,0 +1,82 @@
+.section-title {
+  position: relative;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 6rem;
+
+  @include respond(smmd) {
+    font-size: 8rem;
+  }
+
+  @include respond(mdlg) {
+    font-size: 13rem;
+  }
+
+  @include respond(xl) {
+    font-size: 18rem;
+  }
+
+  &--about {
+    font-weight: 300;
+  }
+
+  span {
+    position: absolute;
+    left: 0.6rem;
+    top: -0.6rem;
+    color: transparent;
+    -webkit-text-stroke: #5c5c5c 2px;
+    z-index: -1;
+    width: 100%;
+
+    @include respond(smmd) {
+      left: 0.8rem;
+      top: -0.8rem;
+    }
+
+    @include respond(mdlg) {
+      left: 1.2rem;
+      top: -1rem;
+    }
+
+    @include respond(xl) {
+      left: 2rem;
+      top: -1.2rem;
+    }
+  }
+
+  &__container {
+    @include flexCenter;
+    grid-column: content-start / content-end;
+    gap: 4rem;
+    margin-bottom: 4rem;
+
+    &.textright {
+      flex-direction: row-reverse;
+    }
+
+    @include respond(mdlg) {
+      margin-bottom: 8rem;
+    }
+
+    @include respond(xl) {
+      margin-bottom: 12rem;
+    }
+  }
+
+  &__italic {
+    display: inline;
+    position: relative;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  &__line {
+    flex: 1;
+    height: 0.8rem;
+    border-radius: 100px;
+    border: 1px solid #5c5c5c;
+  }
+}

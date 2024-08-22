@@ -1,0 +1,49 @@
+.grid {
+  display: grid;
+  grid-template-columns:
+    [full-start] 1fr [content-start] repeat(
+      4,
+      [col-start] $calculate-width-sm [col-end]
+    )
+    [content-end] 1fr [full-end];
+  gap: $gutter-sm;
+  margin: 0 auto;
+  width: 100%;
+
+  @include respond(smmd) {
+    grid-template-columns:
+      [full-start] 1fr [content-start] repeat(
+        8,
+        [col-start] $calculate-width-smmd [col-end]
+      )
+      [content-end] 1fr [full-end];
+  }
+
+  @include respond(md) {
+    grid-template-columns:
+      [full-start] 1fr [content-start] repeat(
+        12,
+        [col-start] $calculate-width-md [col-end]
+      )
+      [content-end] 1fr [full-end];
+    gap: $gutter;
+  }
+
+  @include respond(mdlg) {
+    grid-template-columns:
+      [full-start] 1fr [content-start] repeat(
+        12,
+        [col-start] $calculate-width-mdlg [col-end]
+      )
+      [content-end] 1fr [full-end];
+  }
+
+  @include respond(xl) {
+    grid-template-columns:
+      [full-start] 1fr [content-start] repeat(
+        12,
+        [col-start] $calculate-width-xl [col-end]
+      )
+      [content-end] 1fr [full-end];
+  }
+}

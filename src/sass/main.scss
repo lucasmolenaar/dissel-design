@@ -1,0 +1,43 @@
+/*=============== IMPORT GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+  font-family: 'PixelFont';
+  src: url('../assets/fonts/pixel_font-7.ttf') format('truetype');
+  font-weight: normal;
+  font-size: normal;
+}
+
+/*=============== IMPORT ABSTRACTS SCSS DIRECTORY ===============*/
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/utils';
+@import 'abstracts/keyframes';
+
+/*=============== IMPORT BASE SCSS DIRECTORY ===============*/
+@import 'base/base';
+@import 'base/typography';
+
+/*=============== IMPORT LAYOUTS SCSS DIRECTORY ===============*/
+@import 'layouts/grid';
+@import 'layouts/navbar';
+@import 'layouts/mobile-menu';
+@import 'layouts/desktop-menu';
+
+/*=============== IMPORT PAGES SCSS DIRECTORY ===============*/
+@import 'pages/home';
+
+/*=============== IMPORT SECTIONS SCSS DIRECTORY ===============*/
+@import 'sections/hero';
+@import 'sections/services';
+@import 'sections/projects';
+@import 'sections/about';
+
+/*=============== IMPORT COMPONENTS SCSS DIRECTORY ===============*/
+@import 'components/button';
+@import 'components/hamburger';
+@import 'components/section-title';
+@import 'components/service-card';
+@import 'components/spin-thingy';
+@import 'components/project-card';
+@import 'components/case-card';

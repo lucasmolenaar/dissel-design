@@ -1,0 +1,189 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  grid-column: full-start / full-end;
+  position: relative;
+  @include flexCenter;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  &__logo {
+    position: absolute;
+    width: 31rem;
+    height: 56rem;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+
+    @include respond(mdlg) {
+      width: auto;
+      height: 80%;
+    }
+  }
+
+  &__title {
+    position: relative;
+    grid-column: content-start / content-end;
+    font-size: 6.8rem;
+    font-family: $font-secondary;
+    z-index: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 8rem;
+    animation: scaleTitle 2s ease-in-out;
+    // overflow: hidden;
+
+    @media screen and (min-width: 400px) {
+      font-size: 6.8rem;
+    }
+
+    @include respond(smmd) {
+      font-size: 8.3rem;
+      line-height: normal;
+      grid-column: 3 / 9;
+      letter-spacing: -4px;
+    }
+
+    @include respond(md) {
+      font-size: 12.2rem;
+      grid-column: 3 / 13;
+      letter-spacing: -6px;
+    }
+
+    @include respond(mdlg) {
+      grid-column: 3 / 13;
+      font-size: 15.5rem;
+    }
+
+    @include respond(xl) {
+      grid-column: 4 / 12;
+      font-size: 18.2rem;
+      letter-spacing: -8px;
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    br {
+      display: none;
+      @include respond(smmd) {
+        display: block;
+      }
+    }
+
+    &-typewriter {
+      color: $color-highlight;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    &-stroke {
+      color: $color-black;
+      font-weight: 700;
+      -webkit-text-stroke: $color-white 2px;
+
+      @include respond(smmd) {
+        font-size: 5.6rem;
+      }
+
+      @include respond(md) {
+        font-size: 8.2rem;
+      }
+
+      @include respond(mdlg) {
+        font-size: 10.4rem;
+        letter-spacing: -4px;
+      }
+
+      @include respond(xl) {
+        font-size: 12.2rem;
+      }
+    }
+
+    &-name {
+      display: none !important;
+      position: absolute;
+      color: rgba($color: $color-white, $alpha: 0.3);
+      font-size: 2.4rem;
+      font-family: $font-tertiary;
+      top: 30%;
+      right: 0rem;
+      letter-spacing: normal;
+
+      @include respond(smmd) {
+        display: block !important;
+      }
+
+      @include respond(mdlg) {
+        right: 3.2rem;
+      }
+
+      @include respond(xl) {
+        right: 0;
+      }
+    }
+
+    &-function {
+      display: none !important;
+      position: absolute;
+      color: rgba($color: $color-white, $alpha: 0.3);
+      font-size: 2.4rem;
+      font-family: $font-tertiary;
+      bottom: 22%;
+      left: 0;
+      letter-spacing: normal;
+
+      @include respond(smmd) {
+        display: block !important;
+      }
+
+      @include respond(md) {
+        left: 0.4rem;
+      }
+
+      @include respond(mdlg) {
+        left: 0.6rem;
+      }
+
+      @include respond(xl) {
+        left: 0.8rem;
+      }
+    }
+  }
+
+  &__scroll {
+    @include flexCenter;
+    position: absolute;
+    left: 1.6rem;
+    bottom: 4rem;
+    font-family: $font-tertiary;
+    text-transform: uppercase;
+    color: rgba($color: $color-white, $alpha: 0.3);
+    flex-direction: column;
+    cursor: pointer;
+
+    @include respond(md) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include respond(mdlg) {
+      font-size: 2.4rem;
+    }
+
+    svg {
+      width: 5.2rem !important;
+      height: 5.2rem !important;
+    }
+  }
+
+  .spinny {
+    display: none;
+
+    @include respond(md) {
+      display: block;
+    }
+  }
+}

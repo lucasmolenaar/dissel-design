@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: $color-black;
+}
+
+body {
+  background-color: $color-black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+
+  @include respond(smmd) {
+    max-width: 72.4rem;
+  }
+
+  @include respond(md) {
+    max-width: 100rem;
+  }
+
+  @include respond(mdlg) {
+    max-width: 120rem;
+  }
+
+  @include respond(xl) {
+    max-width: 132rem;
+  }
+}
