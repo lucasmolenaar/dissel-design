@@ -3,6 +3,11 @@ import { FiDownload } from 'react-icons/fi';
 import SectionTitle from '../components/SectionTitle';
 import Grid from '../layouts/Grid';
 
+import Mail from '/svg/mail.svg';
+import Dribbble from '/svg/dribbble.svg';
+import Instagram from '/svg/insta.svg';
+import Twtter from '/svg/twitter.svg';
+import LinkedIn from '/svg/linkedin.svg';
 import Figma from '/svg/figma.svg';
 import Photoshop from '/svg/photoshop.svg';
 import Illustrator from '/svg/illustrator.svg';
@@ -104,19 +109,29 @@ const About = () => {
 
             <ul className='about__socials-list'>
               <li>
-                <a href='#'></a>
+                <a href='#'>
+                  <img src={Mail} alt='Mail' />
+                </a>
               </li>
               <li>
-                <a href='#'></a>
+                <a href='#'>
+                  <img src={Dribbble} alt='Dribbble' />
+                </a>
               </li>
               <li>
-                <a href='#'></a>
+                <a href='#'>
+                  <img src={Instagram} alt='Instagram' />
+                </a>
               </li>
               <li>
-                <a href='#'></a>
+                <a href='#'>
+                  <img src={Twtter} alt='Twtter' />
+                </a>
               </li>
               <li>
-                <a href='#'></a>
+                <a href='#'>
+                  <img src={LinkedIn} alt='LinkedIn' />
+                </a>
               </li>
             </ul>
           </div>
