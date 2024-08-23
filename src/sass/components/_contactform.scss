@@ -1,0 +1,108 @@
+.contactform {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  font-family: $font-secondary;
+
+  @include respond(mdlg) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    @include respond(mdlg) {
+      &:nth-of-type(1) {
+        grid-column: 1 / 2;
+      }
+
+      &:nth-child(2) {
+        grid-column: 2 / 3;
+      }
+
+      &:nth-of-type(3) {
+        @include respond(mdlg) {
+          grid-column: 1 / -1;
+        }
+      }
+
+      &:nth-of-type(4) {
+        @include respond(mdlg) {
+          grid-column: 1 / -1;
+        }
+      }
+    }
+
+    label {
+      @include respond(mdlg) {
+        margin-bottom: 0.6rem;
+      }
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      position: relative;
+      padding: 1.4rem 2.4rem;
+      border-radius: 1.6rem;
+      font-family: $font-secondary;
+      font-weight: 300;
+      background-color: rgba($color: $color-white, $alpha: 0.05);
+      border: 2px solid rgba($color: $color-white, $alpha: 0.2);
+      color: $color-white;
+      outline: none;
+      font-size: 1.6rem;
+
+      @include respond(mdlg) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__inputwrapper {
+    width: 100%;
+    position: relative;
+
+    &::after {
+      content: url('/svg/asterisk.svg');
+      position: absolute;
+      right: 2.4rem;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9;
+      color: $color-white;
+    }
+  }
+
+  &__submit {
+    width: min-content;
+    padding: 1.2rem 3rem;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    font-family: $font-secondary;
+    font-size: 1.6rem;
+    margin-top: 0.4rem;
+
+    @include respond(mdlg) {
+      margin-top: 1.2rem;
+    }
+  }
+
+  &__textareawrapper {
+    position: relative;
+
+    &::after {
+      content: url('/svg/asterisk.svg');
+      position: absolute;
+      right: 2.4rem;
+      top: 2.4rem;
+      z-index: 9;
+      color: $color-white;
+    }
+  }
+}

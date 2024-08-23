@@ -1,0 +1,125 @@
+.contact {
+  grid-column: full-start / full-end;
+  margin-bottom: 14rem;
+
+  @include respond(mdlg) {
+    margin-bottom: 20rem;
+  }
+
+  &__container {
+    grid-column: content-start / content-end;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @include respond(md) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @include respond(md) {
+      grid-column: 1 / 5;
+    }
+
+    p {
+      font-family: $font-secondary;
+      font-size: 1.8rem;
+      font-style: italic;
+      font-weight: 300;
+      color: rgba($color: $color-white, $alpha: 0.5);
+      line-height: 2.8rem;
+
+      @include respond(mdlg) {
+        font-size: 2rem;
+        line-height: 3.2rem;
+      }
+
+      span {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__persona {
+    display: flex;
+    gap: 2rem;
+
+    &-image {
+      width: 7.2rem;
+      height: 7.2rem;
+      background-color: grey;
+      border-radius: 50%;
+
+      @include respond(mdlg) {
+        width: 9rem;
+        height: 9rem;
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-name {
+      font-size: 2rem;
+      color: $color-white !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: 3rem;
+
+      @include respond(mdlg) {
+        font-size: 2.4rem;
+      }
+    }
+
+    &-function {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+
+      @include respond(mdlg) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &-mail {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      color: $color-white;
+      font-size: 1.4rem;
+      font-family: $font-secondary;
+
+      @include respond(mdlg) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &-icon {
+      @include flexCenter;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      border: 2px solid rgba($color: $color-white, $alpha: 0.3);
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  &__form {
+    @include respond(md) {
+      grid-column: 6 / 12;
+    }
+  }
+}
