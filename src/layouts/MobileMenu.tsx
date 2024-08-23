@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 
 const MobileMenu = () => {
   return (
@@ -29,10 +30,9 @@ const MobileMenu = () => {
         </a>
       </li>
 
-      <li>
+      <li className='mobile-menu__talk'>
         <a href='#contact'>
-          <span>04</span>
-          Let's talk
+          Let's talk! <IoIosArrowRoundForward size={24} />
         </a>
       </li>
     </motion.ul>

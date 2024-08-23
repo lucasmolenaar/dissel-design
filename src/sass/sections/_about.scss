@@ -40,6 +40,7 @@
     @include respond(md) {
       grid-column: 1 / 2;
       grid-row: 1 / 4;
+      height: 28rem;
     }
 
     @include respond(mdlg) {
@@ -69,7 +70,7 @@
 
     @include respond(mdlg) {
       grid-row: 4 / 7;
-      margin-top: -8.8rem;
+      margin-top: -18.2rem;
     }
 
     @include respond(xl) {
@@ -223,11 +224,10 @@
     }
 
     @include respond(mdlg) {
-      margin-top: -3.5rem;
     }
 
     @include respond(xl) {
-      margin-top: -31.4rem;
+      margin-top: -22.4rem;
     }
 
     h3 {
@@ -378,10 +378,11 @@
       grid-column: 3 / 4;
       grid-row: 4 / 7;
       margin-top: -5.2rem;
+      height: 26rem;
     }
 
     @include respond(mdlg) {
-      margin-top: 0;
+      margin-top: -9.2rem;
       height: 32rem;
     }
 

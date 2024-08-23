@@ -4,15 +4,21 @@ const DesktopMenu = () => {
   return (
     <ul className='desktop-menu'>
       <li>
-        <a href='#services'>Services</a>
+        <a href='#services'>
+          <span>01</span> Services
+        </a>
       </li>
 
       <li>
-        <a href='#work'>Work</a>
+        <a href='#work'>
+          <span>04</span> Work
+        </a>
       </li>
 
       <li>
-        <a href='#about'>About me</a>
+        <a href='#about'>
+          <span>03</span> About me
+        </a>
       </li>
 
       <li className='desktop-menu__talk'>

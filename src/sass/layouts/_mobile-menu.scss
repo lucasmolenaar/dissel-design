@@ -2,13 +2,13 @@
   position: absolute;
   top: 100%;
   right: 0;
-  width: 9.2rem;
+  // width: 9.2rem;
   background: rgba($color: $color-white, $alpha: 0.05);
   padding: 1.2rem 0.8rem;
   border-radius: 0.4rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.6rem;
 
   @include respond(md) {
     display: none;
@@ -27,6 +27,18 @@
         color: rgba($color: $color-white, $alpha: 0.3);
         font-size: 1.4rem;
       }
+    }
+  }
+
+  &__talk {
+    padding: 0.6rem 1.2rem;
+    border-radius: 100rem;
+    border: 1px solid $color-white;
+
+    a {
+      @include flexCenter;
+      flex-direction: row !important;
+      gap: 1rem;
     }
   }
 }
