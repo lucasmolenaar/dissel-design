@@ -50,7 +50,6 @@
       position: relative;
       grid-column: content-start / content-end;
       font-family: $font-secondary;
-      overflow: hidden;
 
       @include respond(md) {
         flex: 2;
