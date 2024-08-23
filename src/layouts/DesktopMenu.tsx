@@ -11,7 +11,7 @@ const DesktopMenu = () => {
 
       <li>
         <a href='#work'>
-          <span>04</span> Work
+          <span>02</span> Work
         </a>
       </li>
 

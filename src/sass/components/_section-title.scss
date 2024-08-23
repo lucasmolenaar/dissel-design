@@ -1,7 +1,8 @@
 .section-title {
   position: relative;
   text-transform: uppercase;
-  font-family: $font-secondary;
+  // font-family: $font-secondary;
+  font-family: 'Poppins', sans-serif;
   z-index: 1;
   font-weight: 400;
   font-size: 6rem;
@@ -50,7 +51,7 @@
   &__container {
     @include flexCenter;
     grid-column: content-start / content-end;
-    gap: 4rem;
+    gap: 2.4rem;
     margin-bottom: 4rem;
 
     &.textright {
@@ -59,10 +60,12 @@
 
     @include respond(mdlg) {
       margin-bottom: 8rem;
+      gap: 3.2rem;
     }
 
     @include respond(xl) {
       margin-bottom: 12rem;
+      gap: 4rem;
     }
   }
 
@@ -71,6 +74,28 @@
     position: relative;
     font-weight: 600;
     font-style: italic;
+  }
+
+  &__spinner {
+    display: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    -webkit-animation: rotate2 10s normal linear infinite;
+    animation: rotate2 10s normal linear infinite;
+
+    @include respond(smmd) {
+      display: block;
+    }
+
+    @include respond(mdlg) {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+
+    @include respond(xl) {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 
   &__line {

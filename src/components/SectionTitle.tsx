@@ -1,3 +1,5 @@
+import Thingy from '/svg/spin-thingy.svg';
+
 interface TitleProps {
   title: string;
   title2?: string;
@@ -21,6 +23,8 @@ const SectionTitle: React.FC<TitleProps> = ({ title, title2, side, about }) => {
         )}
         <span>{title}</span>
       </h2>
+
+      <img className='section-title__spinner' src={Thingy} alt='Spinner' />
 
       <div className='section-title__line'></div>
     </div>
