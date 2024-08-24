@@ -1,4 +1,9 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 import { FiDownload } from 'react-icons/fi';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 import SectionTitle from '../components/SectionTitle';
 import Grid from '../layouts/Grid';
@@ -214,7 +219,18 @@ const About = () => {
             </button>
           </div>
 
-          <div className='about__carousel'></div>
+          <div className='about__carousel'>
+            <Swiper
+              pagination={true}
+              modules={[Pagination]}
+              className='mySwiper'
+              loop
+            >
+              <SwiperSlide>Image 1</SwiperSlide>
+              <SwiperSlide>Image 2</SwiperSlide>
+              <SwiperSlide>Image 3</SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </Grid>
     </section>

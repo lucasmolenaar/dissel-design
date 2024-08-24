@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import useScreenWidth from '../hooks/useScreenWidth';
+
 interface CardProps {
   topTitle: string;
   year: string;
@@ -8,21 +11,36 @@ interface CardProps {
   ux?: boolean;
   design?: boolean;
   dev?: boolean;
+  color: string;
 }
 
 const ProjectCard: React.FC<CardProps> = ({
   topTitle,
   year,
   large,
+  image,
   bottomTitle,
   bottomSubtitle,
   ux,
   design,
   dev,
+  color,
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const screenwidth = useScreenWidth();
+
   return (
-    <div className='project-card'>
-      <div className='project-card__top'>
+    <div
+      className='project-card'
+      onMouseOver={() => setIsHovered(true)}
+      onMouseOut={() => setIsHovered(false)}
+    >
+      <div
+        className='project-card__top'
+        style={{
+          backgroundColor: isHovered || screenwidth < 1024 ? color : '',
+        }}
+      >
         <p className='project-card__top-title'>{topTitle}</p>
         <p className='project-card__top-year'>{year}</p>
       </div>
@@ -31,7 +49,9 @@ const ProjectCard: React.FC<CardProps> = ({
         className={`project-card__bottom ${
           large ? 'project-card__bottom--big' : ''
         }`}
+        // style={{ backgroundImage: `url(${image})` }}
       >
+        <img src={image} alt='Project image' />
         <div className='project-card__bottom-content'>
           <p className='project-card__bottom-title'>{bottomTitle}</p>
           <p className='project-card__bottom-subtitle'>{bottomSubtitle}</p>

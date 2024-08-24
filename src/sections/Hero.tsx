@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
-import LottieArrow from '../assets/lottie/arrowdown.json';
-
-import BackgroundLogo from '/images/header-background-disseldesign.png';
-import Grid from '../layouts/Grid';
 import Lottie from 'lottie-react';
+import { Typewriter } from 'react-simple-typewriter';
+
+import Grid from '../layouts/Grid';
 import SpinThingy from '../components/SpinThingy';
+import BackgroundLogo from '/images/header-background-disseldesign.png';
+import LottieArrow from '../assets/lottie/arrowdown.json';
+import useScreenWidth from '../hooks/useScreenWidth';
 
 const variants = {
   hidden: { y: '100%', opacity: 0 },
@@ -29,6 +31,7 @@ const staggerChildren = {
 };
 
 const Hero = () => {
+  const screenwidth = useScreenWidth();
   return (
     <section className='hero'>
       <motion.img
@@ -55,7 +58,18 @@ const Hero = () => {
           <motion.span variants={variants}>Am</motion.span>{' '}
           <motion.span variants={variants}>Dissel</motion.span>{' '}
           <motion.span className='hero__title-typewriter' variants={variants}>
-            Creative
+            {screenwidth < 768 ? (
+              'Creatieve'
+            ) : (
+              <Typewriter
+                words={['Creatieve', 'Innovatieve']}
+                cursor
+                loop
+                typeSpeed={160}
+                deleteSpeed={60}
+                delaySpeed={2000}
+              />
+            )}
           </motion.span>{' '}
           <br />
           <motion.span className='hero__title-stroke' variants={variants}>

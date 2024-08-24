@@ -4,6 +4,7 @@
   border: 1px solid rgba($color: $color-white, $alpha: 0.2);
   background-color: transparent;
   border-radius: 1.6rem;
+  cursor: pointer;
 
   &:first-of-type {
     @include respond(md) {
@@ -43,6 +44,7 @@
     border: 1px solid rgba($color: $color-white, $alpha: 0.2);
     border-radius: 1.2rem;
     background-color: rgba($color: $color-white, $alpha: 0.05);
+    transition: all 0.6s;
 
     &-title {
       font-family: $font-secondary;
@@ -76,14 +78,16 @@
   }
 
   &__bottom {
+    position: relative;
     background-color: #343434;
     height: 34rem;
     width: 100%;
-    border: 1px solid rgba($color: $color-white, $alpha: 0.2);
+    // border: 1px solid rgba($color: $color-white, $alpha: 0.2);
     border-radius: 1.2rem;
     margin-top: 0.8rem;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     @include respond(md) {
       height: 46rem;
@@ -101,10 +105,28 @@
       }
     }
 
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      object-fit: cover;
+      transition: all 0.6s;
+
+      @include respond(md) {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+      }
+    }
+
     &-content {
+      position: relative;
       font-family: $font-secondary;
       padding: 2rem 1.6rem;
       margin-top: auto;
+      z-index: 1;
     }
 
     &-title {
@@ -157,4 +179,10 @@
       }
     }
   }
+}
+
+.project-card:hover .project-card__bottom img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  scale: 1.1;
 }

@@ -93,10 +93,10 @@
         font-size: 8.2rem;
       }
 
-      @include respond(mdlg) {
-        font-size: 10.4rem;
-        letter-spacing: -4px;
-      }
+      // @include respond(mdlg) {
+      //   font-size: 10.4rem;
+      //   letter-spacing: -4px;
+      // }
 
       @include respond(xl) {
         font-size: 12.2rem;
