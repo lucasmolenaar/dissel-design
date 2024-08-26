@@ -16,6 +16,10 @@ body {
   background-color: $color-black;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 ul {
   list-style-type: none;
 }

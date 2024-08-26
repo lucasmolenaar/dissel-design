@@ -22,7 +22,7 @@ const ServiceCard: React.FC<CardProps> = ({
 
   const handleMouseOver = () => {
     setBackgroundColor(bgColor);
-    setListHeight(160);
+    setListHeight(180);
   };
 
   const handleMouseOut = () => {

@@ -53,9 +53,19 @@
     grid-column: content-start / content-end;
     gap: 2.4rem;
     margin-bottom: 4rem;
+    justify-self: start;
+
+    @include respond(sm) {
+      justify-self: auto;
+    }
 
     &.textright {
       flex-direction: row-reverse;
+      justify-self: end;
+
+      @include respond(sm) {
+        justify-self: auto;
+      }
     }
 
     @include respond(mdlg) {
@@ -83,7 +93,7 @@
     -webkit-animation: rotate2 10s normal linear infinite;
     animation: rotate2 10s normal linear infinite;
 
-    @include respond(smmd) {
+    @include respond(sm) {
       display: block;
     }
 
@@ -99,9 +109,14 @@
   }
 
   &__line {
+    display: none;
     flex: 1;
     height: 0.8rem;
     border-radius: 100px;
     border: 1px solid #5c5c5c;
+
+    @include respond(sm) {
+      display: block;
+    }
   }
 }

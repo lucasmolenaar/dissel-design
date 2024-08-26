@@ -78,16 +78,22 @@ const Footer = () => {
 
               <ul className='footer__menu-sub'>
                 <li>
-                  <IoIosArrowRoundForward color='#888888' size={20} />
-                  Ziggo Dome
+                  <a href='/projects/ziggo-dome'>
+                    <IoIosArrowRoundForward color='#888888' size={20} />
+                    Ziggo Dome
+                  </a>
                 </li>
                 <li>
-                  <IoIosArrowRoundForward color='#888888' size={20} /> New
-                  Edition
+                  <a href='/projects/new-edition'>
+                    <IoIosArrowRoundForward color='#888888' size={20} /> New
+                    Edition
+                  </a>
                 </li>
                 <li>
-                  <IoIosArrowRoundForward color='#888888' size={20} />
-                  Marktzicht
+                  <a href='/projects/marktzicht'>
+                    <IoIosArrowRoundForward color='#888888' size={20} />
+                    Marktzicht
+                  </a>
                 </li>
               </ul>
             </li>
@@ -100,28 +106,40 @@ const Footer = () => {
 
               <ul className='footer__menu-sub footer__menu-sub--cases'>
                 <li>
-                  <IoIosArrowRoundForward color='#888888' size={20} />
-                  Case 1
+                  <a href='/cases/1'>
+                    <IoIosArrowRoundForward color='#888888' size={20} />
+                    Case 1
+                  </a>
                 </li>
                 <li>
-                  <IoIosArrowRoundForward color='#888888' size={20} />
-                  Case 4
+                  <a href='/cases/1'>
+                    <IoIosArrowRoundForward color='#888888' size={20} />
+                    Case 4
+                  </a>
                 </li>
                 <li>
-                  <IoIosArrowRoundForward color='#888888' size={20} />
-                  Case 2
+                  <a href='/cases/1'>
+                    <IoIosArrowRoundForward color='#888888' size={20} />
+                    Case 2
+                  </a>
                 </li>
                 <li>
-                  <IoIosArrowRoundForward color='#888888' size={20} />
-                  Case 5
+                  <a href='/cases/1'>
+                    <IoIosArrowRoundForward color='#888888' size={20} />
+                    Case 5
+                  </a>
                 </li>
                 <li>
-                  <IoIosArrowRoundForward color='#888888' size={20} />
-                  Case 3
+                  <a href='/cases/1'>
+                    <IoIosArrowRoundForward color='#888888' size={20} />
+                    Case 3
+                  </a>
                 </li>
                 <li>
-                  <IoIosArrowRoundForward color='#888888' size={20} />
-                  Case 6
+                  <a href='/cases/1'>
+                    <IoIosArrowRoundForward color='#888888' size={20} />
+                    Case 6
+                  </a>
                 </li>
               </ul>
             </li>
