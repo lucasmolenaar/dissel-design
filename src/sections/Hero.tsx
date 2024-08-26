@@ -56,7 +56,7 @@ const Hero = () => {
           <motion.span variants={variants}>Hi,</motion.span>{' '}
           <motion.span variants={variants}>I</motion.span>{' '}
           <motion.span variants={variants}>Am</motion.span>{' '}
-          <motion.span variants={variants}>Dissel</motion.span>{' '}
+          <motion.span variants={variants}>Dissel</motion.span> <br />
           <motion.span className='hero__title-typewriter' variants={variants}>
             {screenwidth < 768 ? (
               'Creatieve'

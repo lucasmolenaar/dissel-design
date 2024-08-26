@@ -38,7 +38,12 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   return (
-    <nav className={`nav ${showNavbar ? 'nav--visible' : 'nav--hidden'}`}>
+    <nav
+      className={`nav ${showNavbar ? 'nav--visible' : 'nav--hidden'}`}
+      // style={{
+      //   backgroundColor: showNavbar && lastScrollY > 100 ? 'green' : '',
+      // }}
+    >
       <Grid>
         <div className='nav__container'>
           {/* <img
