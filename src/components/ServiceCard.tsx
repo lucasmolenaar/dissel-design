@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import useScreenWidth from '../hooks/useScreenWidth';
+import ListItem from '/svg/list-item.svg';
 
 interface CardProps {
   title: string;
@@ -48,7 +49,10 @@ const ServiceCard: React.FC<CardProps> = ({
 
       <ul style={{ height: screenwidth < 1024 ? '' : listHeight }}>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index}>
+            <img src={ListItem} />
+            {item}
+          </li>
         ))}
       </ul>
     </div>

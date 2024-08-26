@@ -1,8 +1,8 @@
 .about {
   grid-column: full-start / full-end;
-  margin-bottom: 14rem;
+  margin-bottom: 12rem;
 
-  @include respond(mdlg) {
+  @include respond(xl) {
     margin-bottom: 20rem;
   }
 

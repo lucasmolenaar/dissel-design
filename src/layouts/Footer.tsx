@@ -64,14 +64,14 @@ const Footer = () => {
             </li>
 
             <li>
-              <a href='#service'>
+              <a href='#about'>
                 <span>03</span>
                 About me
               </a>
             </li>
 
             <li>
-              <a href='#service'>
+              <a href='#work'>
                 <span>02</span>
                 Projects
               </a>
@@ -101,7 +101,7 @@ const Footer = () => {
             <li>
               <a href='#service'>
                 <span>02</span>
-                Service
+                Cases
               </a>
 
               <ul className='footer__menu-sub footer__menu-sub--cases'>

@@ -5,7 +5,7 @@ import Grid from '../layouts/Grid';
 
 const Projects = () => {
   return (
-    <section className='projects'>
+    <section className='projects' id='work'>
       <Grid>
         <SectionTitle title={'Projecten'} side={'right'} />
 

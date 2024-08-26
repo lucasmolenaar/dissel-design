@@ -5,7 +5,7 @@ import Mail from '/svg/mail.svg';
 
 const Contact = () => {
   return (
-    <section className='contact'>
+    <section className='contact' id='contact'>
       <Grid>
         <SectionTitle title={'Contact'} side={'right'} />
 

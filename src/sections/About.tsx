@@ -78,7 +78,7 @@ const About = () => {
   ];
 
   return (
-    <section className='about'>
+    <section className='about' id='about'>
       <Grid>
         <SectionTitle title='Over' title2='mij' side={'left'} about />
 
