@@ -17,7 +17,7 @@ const variants = {
       type: 'just',
       stiffness: 100,
       ease: 'easeInOut',
-      duration: 1.5,
+      duration: 1,
     },
   },
 };
@@ -57,7 +57,12 @@ const Hero = () => {
           <motion.span variants={variants}>I</motion.span>{' '}
           <motion.span variants={variants}>Am</motion.span>{' '}
           <motion.span variants={variants}>Dissel</motion.span> <br />
-          <motion.span className='hero__title-typewriter' variants={variants}>
+          <motion.span
+            className='hero__title-typewriter'
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.6, duration: 0.5 }}
+          >
             {screenwidth < 768 ? (
               'Creatieve'
             ) : (
