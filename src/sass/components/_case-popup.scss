@@ -163,7 +163,7 @@
     border-radius: 0.8rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1.6rem;
 
     &-company,
     &-year,
@@ -197,14 +197,15 @@
     }
 
     &-type {
+      margin-left: auto;
+
       p {
-        font-family: $font-tertiary;
         text-transform: uppercase;
-        padding: 0.4rem;
-        background-color: rgba($color: $color-white, $alpha: 0.1);
-        border-radius: 0.4rem;
+        padding: 0.4rem 0.6rem;
+        border-radius: 100px;
         font-size: 1.2rem;
         color: $color-blue;
+        border: 1px solid rgba($color: $color-white, $alpha: 0.3);
       }
     }
   }

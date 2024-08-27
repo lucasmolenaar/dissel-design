@@ -96,27 +96,35 @@ const CasePopup: React.FC<PopupProps> = ({ setCaseOpen, title }) => {
               target='_blank'
               className='case-popup__outlink'
             >
-              <HiOutlineExternalLink size={26} />
+              <HiOutlineExternalLink size={20} />
             </a>
             <div
               className='case-popup__close'
               onClick={() => setCaseOpen(false)}
             >
-              <IoClose size={32} />
+              <IoClose size={24} />
             </div>
 
             <div className='case-popup__meta'>
-              <div className='case-popup__meta-company'>
-                <span>Bedrijf</span>
-                <p>{selectedCase?.company}</p>
-              </div>
               <div className='case-popup__meta-year'>
                 <span>Jaar</span>
                 <p>{selectedCase?.year}</p>
               </div>
+              <div className='case-popup__meta-company'>
+                <span>Bedrijf</span>
+                <p>{selectedCase?.company}</p>
+              </div>
+
               <div className='case-popup__meta-type'>
                 <span>Type</span>
-                <p style={{ color: typeColor }}>{selectedCase?.type}</p>
+                <p
+                  style={{
+                    color: typeColor,
+                    borderColor: typeColor,
+                  }}
+                >
+                  {selectedCase?.type}
+                </p>
               </div>
             </div>
 
