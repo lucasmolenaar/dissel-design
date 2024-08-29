@@ -237,11 +237,8 @@
         display: flex;
         align-items: center;
         gap: 0.8rem;
-
-        @include respond(smmd) {
-          width: fit-content;
-          height: fit-content;
-        }
+        width: fit-content;
+        height: fit-content;
 
         @include respond(xl) {
           font-size: 2rem;
