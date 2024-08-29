@@ -21,6 +21,7 @@ const Projects = () => {
             design
             dev
             color='#58c556'
+            link='/project/ziggo-dome'
           />
 
           <ProjectCard
@@ -32,6 +33,7 @@ const Projects = () => {
             ux
             design
             color='#1da4ff'
+            link='/project/ziggo-dome'
           />
 
           <ProjectCard
@@ -43,6 +45,7 @@ const Projects = () => {
             design
             dev
             color='#743ecc'
+            link='/project/ziggo-dome'
           />
         </div>
 

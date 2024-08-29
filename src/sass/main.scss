@@ -25,9 +25,11 @@
 @import 'layouts/mobile-menu';
 @import 'layouts/desktop-menu';
 @import 'layouts/footer';
+@import 'layouts/project-nav';
 
 /*=============== IMPORT PAGES SCSS DIRECTORY ===============*/
 @import 'pages/home';
+@import 'pages/project';
 
 /*=============== IMPORT SECTIONS SCSS DIRECTORY ===============*/
 @import 'sections/hero';

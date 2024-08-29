@@ -1,4 +1,5 @@
 import Grid from '../layouts/Grid';
+import Navbar from '../layouts/Navbar';
 import About from '../sections/About';
 import Contact from '../sections/Contact';
 import Hero from '../sections/Hero';
@@ -7,19 +8,23 @@ import Services from '../sections/Services';
 
 const Home = () => {
   return (
-    <main>
-      <Grid>
-        <Hero />
+    <>
+      <Navbar />
 
-        <Services />
+      <main>
+        <Grid>
+          <Hero />
 
-        <Projects />
+          <Services />
 
-        <About />
+          <Projects />
 
-        <Contact />
-      </Grid>
-    </main>
+          <About />
+
+          <Contact />
+        </Grid>
+      </main>
+    </>
   );
 };
 

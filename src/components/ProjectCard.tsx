@@ -12,6 +12,7 @@ interface CardProps {
   design?: boolean;
   dev?: boolean;
   color: string;
+  link: string;
 }
 
 const ProjectCard: React.FC<CardProps> = ({
@@ -25,12 +26,14 @@ const ProjectCard: React.FC<CardProps> = ({
   design,
   dev,
   color,
+  link,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const screenwidth = useScreenWidth();
 
   return (
-    <div
+    <a
+      href={link}
       className='project-card'
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
@@ -77,7 +80,7 @@ const ProjectCard: React.FC<CardProps> = ({
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

@@ -48,3 +48,17 @@
     transform: rotate3d(0, 0, 1, 360deg);
   }
 }
+
+@keyframes switchColor {
+  0% {
+    background-color: #24b23c;
+  }
+
+  50% {
+    background-color: #47de61;
+  }
+
+  100% {
+    background-color: #24b23c;
+  }
+}

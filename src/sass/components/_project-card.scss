@@ -5,6 +5,7 @@
   background-color: transparent;
   border-radius: 1.6rem;
   cursor: pointer;
+  color: $color-white;
 
   &:first-of-type {
     @include respond(md) {

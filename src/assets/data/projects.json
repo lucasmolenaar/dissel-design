@@ -1,0 +1,48 @@
+[
+  {
+    "slug": "ziggo-dome",
+    "logo": "",
+    "title": "Ziggo Dome",
+    "subtitle1": "Online Ervaring",
+    "subtitle2": "Redesign - Juli 2024",
+    "image": "/images/placeholder.jpg",
+    "company": "Ziggo Dome",
+    "role": "UX/UI Designer",
+    "spentTime": "12 maanden",
+    "skills": [
+      "UX Research",
+      "Interaction Design",
+      "Visual Design",
+      "Prototyping",
+      "Testing"
+    ],
+    "link": "https://ziggodome.nl",
+    "text": "De huidige Ziggo Dome website is in 2015 ontwikkeld en bekroond als de beste website van het jaar in 2020. Vanaf 2023 kwamen wij op een <span>cruciaal keerpunt</span> voor de Ziggo Dome website. Het werd duidelijk dat de website een update nodig heeft. <br /><br /> De huidige website maakt gebruik van <span>verouderde technieken</span>, wat duidelijk merkbaar is aan <span>functionaliteits-problemen</span> en een <span>afnemende laadsnelheid</span>. Veel features werken niet meer, en de groei van mobiel gebruik legt extra druk op de site, die oorspronkelijk niet was ontworpen met deze ontwikkeling in gedachten. <br /><br /> De tijd is nu aangebroken voor een complete vernieuwing (redesign) om de Ziggo Dome <span>online-ervaring</span> naar een hoger niveau te tillen."
+  },
+  {
+    "logo": "",
+    "title": "",
+    "subtitle1": "",
+    "subtitle2": "",
+    "image": "",
+    "company": "",
+    "role": "",
+    "spentTime": "",
+    "skills": [""],
+    "link": "",
+    "text": ""
+  },
+  {
+    "logo": "",
+    "title": "",
+    "subtitle1": "",
+    "subtitle2": "",
+    "image": "",
+    "company": "",
+    "role": "",
+    "spentTime": "",
+    "skills": [""],
+    "link": "",
+    "text": ""
+  }
+]
