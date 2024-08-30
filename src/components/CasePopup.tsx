@@ -1,11 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper as SwiperType } from 'swiper/types';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
+import { IoChevronBack } from 'react-icons/io5';
+import { IoChevronForward } from 'react-icons/io5';
 
 import Grid from '../layouts/Grid';
 import cases from '../assets/data/cases.json';
@@ -19,6 +22,7 @@ interface PopupProps {
 const CasePopup: React.FC<PopupProps> = ({ setCaseOpen, title }) => {
   const [selectedCase, setSelectedCase] = useState<Case | undefined>();
   const [typeColor, setTypeColor] = useState('#fafafa');
+  const swiperRef = useRef<SwiperType | null>(null);
 
   useEffect(() => {
     const foundCase = cases.find(singleCase => singleCase.title === title);
@@ -71,11 +75,24 @@ const CasePopup: React.FC<PopupProps> = ({ setCaseOpen, title }) => {
               modules={[Pagination]}
               className='mySwiper'
               loop
+              onSwiper={swiper => {
+                swiperRef.current = swiper;
+              }}
             >
               {selectedCase?.images.map((_, index) => (
                 <SwiperSlide key={index}>Image {index + 1}</SwiperSlide>
               ))}
             </Swiper>
+
+            <div className='case-popup__carousel-buttons'>
+              <button onClick={() => swiperRef.current?.slidePrev()}>
+                <IoChevronBack color='#fafafa' size={24} />
+              </button>
+
+              <button onClick={() => swiperRef.current?.slideNext()}>
+                <IoChevronForward color='#fafafa' size={24} />
+              </button>
+            </div>
           </motion.div>
 
           <motion.div

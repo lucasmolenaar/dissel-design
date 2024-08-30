@@ -19,7 +19,11 @@
   &__item {
     border: 1.5px solid #404040;
     border-radius: 100px;
-    padding: 1rem 2rem;
+    transition: all 0.2s;
+
+    &:hover {
+      border-color: $color-white;
+    }
 
     a {
       display: flex;
@@ -27,6 +31,12 @@
       gap: 1.2rem;
       color: $color-white;
       font-size: 1.4rem;
+      padding: 1rem 2rem;
+      transition: all 0.2s;
+
+      &:hover {
+        gap: 2rem;
+      }
 
       @include respond(smmd) {
         font-size: 1.6rem;
