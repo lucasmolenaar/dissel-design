@@ -10,7 +10,7 @@ const MobileMenu = () => {
       exit={{ x: '100%', opacity: 0 }}
     >
       <li>
-        <a href='#service'>
+        <a href='#services'>
           <span>01</span>
           Service
         </a>
