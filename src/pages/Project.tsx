@@ -205,7 +205,7 @@ const Project = () => {
           </div>
 
           <ul className='project__methods'>
-            {project?.methods.map((method, index) => (
+            {project?.methods.map((_, index) => (
               <li key={index}>
                 <img src='' alt='' />
 
