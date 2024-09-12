@@ -172,6 +172,7 @@ const Project = () => {
                 apparaten, inclusief de oudere generatie. Om hierop in te
                 spelen, richten we bij het redesign op focus mobile-first.
                 <br />
+                <br />
                 In de afgelopen 10 jaar is het schermformaat van mobiele
                 telefoons verdubbeld. Op kleine smartphones was elk gebied
                 vrijwel gemakkelijk te bereiken, maar het bovenste gedeelte is
@@ -184,6 +185,7 @@ const Project = () => {
                 gebruiksvriendelijker door de Ziggo Dome Webapplicatie navigeren
                 en dat biedt een comfortabele interactie met de hand en duim.
                 <br />
+                <br />
                 Naar aanleiding van de actuele UX-trends uit 2023 zijn er
                 diverse innovaties geïntegreerd in de interface om de
                 gebruikerservaring intuïtiever, gebruiksvriendelijker en visueel
@@ -192,6 +194,7 @@ const Project = () => {
                 scrolling, animation card transition, dark-modus,
                 micro-interactions en het gebruiken van grote afbeeldingen die
                 worden omgezet in video.
+                <br />
                 <br />
                 Lorem ipsum dolor sit amet consectetur. A eget phasellus sit
                 porttitor. Semper ut non est hac. Velit dignissim sodales
