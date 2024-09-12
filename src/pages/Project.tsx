@@ -7,15 +7,30 @@ import Image from '/images/placeholder.jpg';
 import { IProject } from '../types/Project';
 import projects from '../assets/data/projects.json';
 import ProjectNav from '../layouts/ProjectNav';
+import useScreenWidth from '../hooks/useScreenWidth';
 
 const Project = () => {
   const { slug } = useParams();
+  const screenwidth = useScreenWidth();
   const [project, setProject] = useState<IProject>();
+  const [goalsBackground, setGoalsBackground] = useState(
+    '/images/goals-background-mobile.jpg'
+  );
 
   useEffect(() => {
     const foundProject = projects.find(p => p.slug === slug);
     setProject(foundProject);
   }, []);
+
+  useEffect(() => {
+    setGoalsBackground(
+      screenwidth < 500
+        ? '/images/goals-background-mobile.jpg'
+        : screenwidth < 1024
+        ? '/images/goals-background-tablet.jpg'
+        : '/images/goals-background-desktop.jpg'
+    );
+  }, [screenwidth]);
 
   return (
     <>
@@ -112,7 +127,10 @@ const Project = () => {
             </motion.div>
           </div>
 
-          <div className='project__goalsbackground'>
+          <div
+            className='project__goalsbackground'
+            style={{ backgroundImage: `url(${goalsBackground})` }}
+          >
             <Grid>
               <div className='project__goals'>
                 <h4>Doelstellingen</h4>

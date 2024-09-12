@@ -322,7 +322,6 @@
 
   &__goalsbackground {
     grid-column: full-start / full-end;
-    min-height: 40rem;
     background-image: url('/images/goals-background-mobile.jpg');
     background-size: cover;
   }
@@ -336,6 +335,10 @@
       font-size: 2rem;
       line-height: 2.2rem;
       margin-bottom: 1.2rem;
+
+      @include respond(smmd) {
+        margin-bottom: 1.6rem;
+      }
     }
 
     p {
@@ -343,10 +346,22 @@
       font-size: 1.5rem;
       line-height: 2.8rem;
       margin-bottom: 3.2rem;
+
+      @include respond(smmd) {
+        margin-bottom: 4.8rem;
+        font-size: 1.6rem;
+      }
     }
 
     &-list {
       grid-column: content-start / content-end;
+
+      @include respond(smmd) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3.2rem;
+        column-gap: 2rem;
+      }
 
       li {
         display: flex;
@@ -368,6 +383,10 @@
     flex-direction: column;
     gap: 4rem;
 
+    @include respond(smmd) {
+      gap: 6rem;
+    }
+
     &-challenge,
     &-research {
       h4 {
@@ -375,12 +394,22 @@
         font-size: 2rem;
         margin-bottom: 1.2rem;
         line-height: 2.6rem;
+
+        @include respond(smmd) {
+          font-size: 2.4rem;
+          line-height: 3rem;
+          margin-bottom: 1.6rem;
+        }
       }
 
       p {
         font-size: 1.5rem;
         line-height: 2.6rem;
         color: #b8b8b8;
+
+        @include respond(smmd) {
+          font-size: 1.6rem;
+        }
       }
     }
   }
@@ -403,6 +432,14 @@
         background-color: rgba($color: $color-white, $alpha: 0.1);
         border-radius: 1.2rem;
         margin-bottom: 2.4rem;
+
+        @include respond(sm) {
+          height: 54vw;
+        }
+
+        @include respond(smmd) {
+          height: 48rem;
+        }
       }
 
       h4 {
@@ -416,6 +453,10 @@
         font-size: 1.5rem;
         line-height: 2.6rem;
         color: #b8b8b8;
+
+        @include respond(smmd) {
+          font-size: 1.6rem;
+        }
       }
     }
   }
