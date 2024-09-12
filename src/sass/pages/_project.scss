@@ -123,15 +123,18 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    margin-bottom: 4.8rem;
 
     @include respond(smmd) {
       gap: 6rem;
+      margin-bottom: 6rem;
     }
 
     @include respond(mdlg) {
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       gap: 2.4rem;
+      margin-bottom: 10rem;
     }
   }
 
@@ -313,6 +316,106 @@
 
       span {
         color: $color-white;
+      }
+    }
+  }
+
+  &__goalsbackground {
+    grid-column: full-start / full-end;
+    min-height: 40rem;
+    background-image: url('/images/goals-background-mobile.jpg');
+    background-size: cover;
+  }
+
+  &__goals {
+    grid-column: content-start / content-end;
+    padding: 6rem 0;
+
+    h4 {
+      font-family: $font-tertiary;
+      font-size: 2rem;
+      line-height: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      color: #b8b8b8;
+      font-size: 1.5rem;
+      line-height: 2.8rem;
+      margin-bottom: 3.2rem;
+    }
+
+    &-list {
+      grid-column: content-start / content-end;
+
+      li {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 5.6rem;
+          line-height: 5rem;
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &__content2 {
+    margin-bottom: 6rem;
+    grid-column: content-start / content-end;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    &-challenge,
+    &-research {
+      h4 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+        line-height: 2.6rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        color: #b8b8b8;
+      }
+    }
+  }
+
+  &__methods {
+    grid-column: content-start / content-end;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    li {
+      width: 100%;
+      padding: 3.2rem 2rem;
+      background-color: rgba($color: $color-white, $alpha: 0.05);
+      border-radius: 1.2rem;
+
+      img {
+        height: 28rem;
+        width: 100%;
+        background-color: rgba($color: $color-white, $alpha: 0.1);
+        border-radius: 1.2rem;
+        margin-bottom: 2.4rem;
+      }
+
+      h4 {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        margin-bottom: 1.2rem;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        color: #b8b8b8;
       }
     }
   }

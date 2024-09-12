@@ -10,4 +10,14 @@ export interface IProject {
   skills: string[];
   link: string;
   text: string;
+  goalsBackground: string;
+  goalsText: string;
+  goals: string[];
+  methods: IMethod[];
+}
+
+interface IMethod {
+  img: string;
+  title: string;
+  text: string;
 }

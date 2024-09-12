@@ -17,7 +17,21 @@
       "Testing"
     ],
     "link": "https://ziggodome.nl",
-    "text": "De huidige Ziggo Dome website is in 2015 ontwikkeld en bekroond als de beste website van het jaar in 2020. Vanaf 2023 kwamen wij op een <span>cruciaal keerpunt</span> voor de Ziggo Dome website. Het werd duidelijk dat de website een update nodig heeft. <br /><br /> De huidige website maakt gebruik van <span>verouderde technieken</span>, wat duidelijk merkbaar is aan <span>functionaliteits-problemen</span> en een <span>afnemende laadsnelheid</span>. Veel features werken niet meer, en de groei van mobiel gebruik legt extra druk op de site, die oorspronkelijk niet was ontworpen met deze ontwikkeling in gedachten. <br /><br /> De tijd is nu aangebroken voor een complete vernieuwing (redesign) om de Ziggo Dome <span>online-ervaring</span> naar een hoger niveau te tillen."
+    "text": "De huidige Ziggo Dome website is in 2015 ontwikkeld en bekroond als de beste website van het jaar in 2020. Vanaf 2023 kwamen wij op een <span>cruciaal keerpunt</span> voor de Ziggo Dome website. Het werd duidelijk dat de website een update nodig heeft. <br /><br /> De huidige website maakt gebruik van <span>verouderde technieken</span>, wat duidelijk merkbaar is aan <span>functionaliteits-problemen</span> en een <span>afnemende laadsnelheid</span>. Veel features werken niet meer, en de groei van mobiel gebruik legt extra druk op de site, die oorspronkelijk niet was ontworpen met deze ontwikkeling in gedachten. <br /><br /> De tijd is nu aangebroken voor een complete vernieuwing (redesign) om de Ziggo Dome <span>online-ervaring</span> naar een hoger niveau te tillen.",
+    "goalsBackground": "/images/goals-background-mobile.jpg",
+    "goalsText": "Er zijn interviews gehouden met zowel medewerkers als werkgevers van de Ziggo Dome, evenals met de huidige gebruikers die regelmatig kaartjes via de Ziggo Dome-website aanschaffen, zowel maandelijks als jaarlijks. Uit deze gesprekken zijn waardevolle inzichten naar voren gekomen die geïntegreerd zullen worden in het redesign.",
+    "goals": [
+      "77% van de online gebruikers bekijkt de website op een mobile device. Dus, mobile first design.",
+      "De user interface krijgt een Netflix/Videoland-stijl met grote, bewegende video's en visuals voor een dynamische en aantrekkelijke ervaring.",
+      "De agenda wordt de belangrijkste feature van de Ziggo Dome website, waarbij er meer wordt gepersonaliseerd op de event pagina’s. Ook zal er meer gepusht worden op de home pagina.",
+      "De nieuwe 3D-plattegrond vervangt de oude versie en biedt een interactieve ervaring met drie verdiepingen. Gebruikers kunnen met gestures door de Ziggo Dome navigeren, wat een volledige en immersieve beleving creëert."
+    ],
+    "methods": [
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" }
+    ]
   },
   {
     "logo": "",
@@ -30,7 +44,16 @@
     "spentTime": "",
     "skills": [""],
     "link": "",
-    "text": ""
+    "text": "",
+    "goalsBackground": "",
+    "goalsText": "",
+    "goals": [""],
+    "methods": [
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" }
+    ]
   },
   {
     "logo": "",
@@ -43,6 +66,15 @@
     "spentTime": "",
     "skills": [""],
     "link": "",
-    "text": ""
+    "text": "",
+    "goalsBackground": "",
+    "goalsText": "",
+    "goals": [""],
+    "methods": [
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" }
+    ]
   }
 ]

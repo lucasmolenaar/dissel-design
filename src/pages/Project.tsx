@@ -111,6 +111,97 @@ const Project = () => {
               </div>
             </motion.div>
           </div>
+
+          <div className='project__goalsbackground'>
+            <Grid>
+              <div className='project__goals'>
+                <h4>Doelstellingen</h4>
+
+                <p>{project?.goalsText}</p>
+
+                <ul className='project__goals-list'>
+                  {project?.goals.map((goal, index) => (
+                    <li key={index}>
+                      <span>0{index + 1}</span>
+                      <p>{goal}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Grid>
+          </div>
+
+          <div className='project__content2'>
+            <div className='project__content2-challenge'>
+              <h4>Design Challenge</h4>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur. A eget phasellus sit
+                porttitor. Semper ut non est hac. Velit dignissim sodales
+                pellentesque ultrices libero rhoncus. Cras porta duis elementum
+                sem tempor turpis mi sed turpis.
+              </p>
+            </div>
+
+            <div className='project__content2-research'>
+              <h4>UX-Research</h4>
+
+              <p>
+                Uit onderzoek is gebleken dat meer dan 76% van de huidige Ziggo
+                Dome-gebruikers hun mobiele apparaat gebruikt. De grootste
+                doelgroep is tussen de 25 en 34 jaar, maar opmerkelijk is dat
+                alle leeftijdsgroepen significant gebruikmaken van mobiele
+                apparaten, inclusief de oudere generatie. Om hierop in te
+                spelen, richten we bij het redesign op focus mobile-first.
+                <br />
+                In de afgelopen 10 jaar is het schermformaat van mobiele
+                telefoons verdubbeld. Op kleine smartphones was elk gebied
+                vrijwel gemakkelijk te bereiken, maar het bovenste gedeelte is
+                nu onbereikbaar zonder de houding van je hand te veranderen.
+                Voor duimbewegingen op smartphones zijn bepaalde zones sneller
+                en makkelijker te bereiken dan andere zones. Door het
+                implementeren van een bottom-navigatie worden de belangrijkste
+                elementen onderaan de pagina geplaatst. De secundaire items
+                worden naar boven verplaatst. De gebruikers zullen hierdoor
+                gebruiksvriendelijker door de Ziggo Dome Webapplicatie navigeren
+                en dat biedt een comfortabele interactie met de hand en duim.
+                <br />
+                Naar aanleiding van de actuele UX-trends uit 2023 zijn er
+                diverse innovaties geïntegreerd in de interface om de
+                gebruikerservaring intuïtiever, gebruiksvriendelijker en visueel
+                aantrekkelijker te maken voor verschillende doelgroepen. Enkele
+                belangrijke elementen die hierbij een rol spelen zijn: dynamic
+                scrolling, animation card transition, dark-modus,
+                micro-interactions en het gebruiken van grote afbeeldingen die
+                worden omgezet in video.
+                <br />
+                Lorem ipsum dolor sit amet consectetur. A eget phasellus sit
+                porttitor. Semper ut non est hac. Velit dignissim sodales
+                pellentesque ultrices libero rhoncus. Cras porta duis elementum
+                sem tempor turpis mi sed turpis.
+              </p>
+            </div>
+          </div>
+
+          <ul className='project__methods'>
+            {project?.methods.map((method, index) => (
+              <li key={index}>
+                <img src='' alt='' />
+
+                <h4>Title {index + 1}</h4>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Auctor felis
+                  condimentum fermentum donec in cras at pellentesque in. Vel a
+                  facilisis nam risus in sit potenti leo. Enim ut integer id
+                  aliquam tempus pellentesque. Vestibulum quisque aliquam
+                  scelerisque quam purus in auctor vulputate. Cursus praesent
+                  aliquet at auctor est consequat. Consequat in lobortis odio
+                  sem sit.
+                </p>
+              </li>
+            ))}
+          </ul>
         </Grid>
       </main>
     </>
