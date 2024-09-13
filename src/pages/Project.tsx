@@ -129,7 +129,15 @@ const Project = () => {
 
           <div
             className='project__goalsbackground'
-            style={{ backgroundImage: `url(${goalsBackground})` }}
+            style={{
+              backgroundImage: `linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(17, 17, 22, 0.35) 50%,
+              rgba(17, 17, 22, 1) 95%
+              ),
+              url(${goalsBackground})`,
+            }}
           >
             <Grid>
               <div className='project__goals'>
