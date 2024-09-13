@@ -474,6 +474,7 @@
       grid-column: 3 / 13;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(22, 4.8rem);
     }
 
     li {
@@ -482,12 +483,22 @@
       background-color: rgba($color: $color-white, $alpha: 0.05);
       border-radius: 1.2rem;
 
+      &:nth-child(1) {
+        grid-row: 1 / 11;
+      }
+
       &:nth-child(2) {
-        // margin-top: 4.8rem;
+        grid-row: 2 / 12;
+      }
+
+      &:nth-child(3) {
+        grid-row: 11 / 22;
+        margin-top: 2rem;
       }
 
       &:nth-child(4) {
-        // margin-top: 4.8rem;
+        grid-row: 12 / 23;
+        margin-top: 2rem;
       }
 
       img {
@@ -510,7 +521,7 @@
         }
 
         @include respond(xl) {
-          height: 32rem;
+          height: 40rem;
         }
       }
 
