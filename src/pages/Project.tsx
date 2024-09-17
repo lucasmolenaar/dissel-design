@@ -133,8 +133,8 @@ const Project = () => {
               backgroundImage: `linear-gradient(
               180deg,
               rgba(0, 0, 0, 0) 0%,
-              rgba(17, 17, 22, 0.35) 50%,
-              rgba(17, 17, 22, 1) 95%
+              rgba(18, 18, 18, 0.35) 50%,
+              rgba(18, 18, 18, 1) 95%
               ),
               url(${goalsBackground})`,
             }}
