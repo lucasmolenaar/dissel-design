@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 const ProjectSlider = () => {
   return (
@@ -16,6 +16,10 @@ const ProjectSlider = () => {
         pagination={{
           clickable: true,
         }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         breakpoints={{
           768: {
             slidesPerView: 1,
@@ -25,7 +29,7 @@ const ProjectSlider = () => {
             slidesPerView: 3.2,
           },
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className='projectslider'
       >
         <SwiperSlide>Slide 1</SwiperSlide>
@@ -33,6 +37,7 @@ const ProjectSlider = () => {
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
       </Swiper>
     </>
   );
