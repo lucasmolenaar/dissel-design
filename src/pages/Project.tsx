@@ -266,7 +266,7 @@ const Project = () => {
 
           <ul className='project__analytics'>
             {/* eslint-disable-next-line */}
-            {project?.analytics.map(({ icon, title, text }, index) => (
+            {project?.analytics.map(({ title, text }, index) => (
               <li key={index}>
                 {/* <img src={''} alt='Icon' /> */}
                 <div></div>
