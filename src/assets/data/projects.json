@@ -31,7 +31,9 @@
       { "img": "", "title": "", "text": "" },
       { "img": "", "title": "", "text": "" },
       { "img": "", "title": "", "text": "" }
-    ]
+    ],
+    "microAnimationText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat.",
+    "aboutProjectText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat. "
   },
   {
     "logo": "",

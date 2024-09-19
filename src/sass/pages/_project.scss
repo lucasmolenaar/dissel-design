@@ -552,4 +552,87 @@
       }
     }
   }
+
+  &__microanimation,
+  &__discover {
+    grid-column: content-start / content-end;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+    @include respond(smmd) {
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+    }
+
+    @include respond(mdlg) {
+      grid-column: 4 / 12;
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 2.4rem;
+    }
+
+    h4 {
+      font-weight: 400;
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      line-height: 2.6rem;
+
+      @include respond(smmd) {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin-bottom: 1.6rem;
+      }
+
+      @include respond(mdlg) {
+        grid-column: 1 / 3;
+        line-height: 3.2rem;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+      color: #b8b8b8;
+
+      @include respond(smmd) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(mdlg) {
+        grid-column: 3 / -1;
+        font-size: 1.8rem;
+        line-height: 3.4rem;
+      }
+    }
+
+    &-video {
+      grid-column: content-start / content-end;
+      width: 100%;
+      height: 24rem;
+      border-radius: 2.4rem;
+      background-color: #353535;
+      margin-top: 6rem;
+
+      @include respond(smmd) {
+        height: 46rem;
+      }
+
+      @include respond(md) {
+        height: 52rem;
+      }
+
+      @include respond(mdlg) {
+        height: 64rem;
+        grid-column: 3 / 13;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+      }
+
+      @include respond(xl) {
+        height: 80rem;
+      }
+    }
+  }
 }

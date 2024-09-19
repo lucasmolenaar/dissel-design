@@ -8,6 +8,7 @@ import { IProject } from '../types/Project';
 import projects from '../assets/data/projects.json';
 import ProjectNav from '../layouts/ProjectNav';
 import useScreenWidth from '../hooks/useScreenWidth';
+import ProjectSlider from '../components/ProjectSlider';
 
 const Project = () => {
   const { slug } = useParams();
@@ -231,6 +232,36 @@ const Project = () => {
               </li>
             ))}
           </ul>
+
+          <div className='project__microanimation'>
+            <h4>Micro-animatie</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida
+              congue adipiscing lobortis. At neque commodo consectetur sed diam
+              sed. Pulvinar iaculis commodo phasellus sit donec eget enim
+              gravida sit. At volutpat vestibulum dolor scelerisque suspendisse
+              nibh quam. Urna gravida eget dui condimentum tempor dignissim at
+              elit. Neque arcu ac et tortor sapien consequat.
+            </p>
+          </div>
+
+          <div className='project__microanimation-video'></div>
+
+          <div className='project__discover'>
+            <h4>Ontdek de Ziggo Dome</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida
+              congue adipiscing lobortis. At neque commodo consectetur sed diam
+              sed. Pulvinar iaculis commodo phasellus sit donec eget enim
+              gravida sit. At volutpat vestibulum dolor scelerisque suspendisse
+              nibh quam. Urna gravida eget dui condimentum tempor dignissim at
+              elit. Neque arcu ac et tortor sapien consequat.
+            </p>
+          </div>
+
+          <ProjectSlider />
         </Grid>
       </main>
     </>
