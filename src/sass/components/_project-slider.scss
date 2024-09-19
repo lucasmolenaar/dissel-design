@@ -5,6 +5,7 @@
   margin: 0 auto;
   cursor: grab;
   margin-top: 6rem;
+  margin-bottom: 6rem;
 
   &:active:hover {
     cursor: grabbing;
@@ -13,11 +14,13 @@
   @include respond(smmd) {
     grid-column: content-start / content-end;
     margin-top: 8rem;
+    margin-bottom: 8rem;
   }
 
   @include respond(mdlg) {
     grid-column: full-start / full-end;
     margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 
   .swiper-wrapper {

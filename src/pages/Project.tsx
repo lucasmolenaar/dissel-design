@@ -9,6 +9,7 @@ import projects from '../assets/data/projects.json';
 import ProjectNav from '../layouts/ProjectNav';
 import useScreenWidth from '../hooks/useScreenWidth';
 import ProjectSlider from '../components/ProjectSlider';
+import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 
 const Project = () => {
   const { slug } = useParams();
@@ -262,6 +263,44 @@ const Project = () => {
           </div>
 
           <ProjectSlider />
+
+          <ul className='project__analytics'>
+            {/* eslint-disable-next-line */}
+            {project?.analytics.map(({ icon, title, text }, index) => (
+              <li key={index}>
+                {/* <img src={''} alt='Icon' /> */}
+                <div></div>
+
+                <h4 className={`${index === 3 || index === 4 ? 'small' : ''}`}>
+                  {title}
+                </h4>
+
+                <p>{text}</p>
+              </li>
+            ))}
+          </ul>
+
+          <div className='project__end'>
+            <h4>Next Project</h4>
+
+            <h2>{project?.title}</h2>
+
+            <h3>{project?.subtitle1}</h3>
+
+            <div className='project__end-buttons'>
+              <a href='/'>
+                <FaArrowLeftLong />
+                Back to home
+              </a>
+
+              <a href='/'>
+                Next project
+                <FaArrowRightLong />
+              </a>
+            </div>
+
+            <div className='project__end-image'></div>
+          </div>
         </Grid>
       </main>
     </>

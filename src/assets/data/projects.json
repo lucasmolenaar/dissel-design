@@ -33,28 +33,34 @@
       { "img": "", "title": "", "text": "" }
     ],
     "microAnimationText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat.",
-    "aboutProjectText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat. "
-  },
-  {
-    "logo": "",
-    "title": "",
-    "subtitle1": "",
-    "subtitle2": "",
-    "image": "",
-    "company": "",
-    "role": "",
-    "spentTime": "",
-    "skills": [""],
-    "link": "",
-    "text": "",
-    "goalsBackground": "",
-    "goalsText": "",
-    "goals": [""],
-    "methods": [
-      { "img": "", "title": "", "text": "" },
-      { "img": "", "title": "", "text": "" },
-      { "img": "", "title": "", "text": "" },
-      { "img": "", "title": "", "text": "" }
+    "aboutProjectText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat. ",
+    "sliderImages": ["", "", "", "", "", ""],
+    "analytics": [
+      {
+        "icon": "",
+        "title": "+900k",
+        "text": "Bezoekers wereldwijd"
+      },
+      {
+        "icon": "",
+        "title": "100+",
+        "text": "Countries reached"
+      },
+      {
+        "icon": "",
+        "title": "3 projects",
+        "text": "Were later based on this foundation"
+      },
+      {
+        "icon": "",
+        "title": "Lorem ipsum",
+        "text": "Lorem ipsum dolor sit amet consectetur. Sagittis est morbi amet ultrices eget ac cursus mattis libero. Quis tellus purus pretium congue vel tellus ut. Varius viverra risus amet massa sit diam."
+      },
+      {
+        "icon": "",
+        "title": "Lorem ipsum",
+        "text": "Lorem ipsum dolor sit amet consectetur. Sagittis est morbi amet ultrices eget ac cursus mattis libero. Quis tellus purus pretium congue vel tellus ut. Varius viverra risus amet massa sit diam."
+      }
     ]
   },
   {
@@ -77,6 +83,88 @@
       { "img": "", "title": "", "text": "" },
       { "img": "", "title": "", "text": "" },
       { "img": "", "title": "", "text": "" }
+    ],
+    "microAnimationText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat.",
+    "aboutProjectText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat. ",
+    "sliderImages": ["", "", "", "", "", ""],
+    "analytics": [
+      {
+        "icon": "",
+        "title": "",
+        "text": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "text": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "text": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "text": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "logo": "",
+    "title": "",
+    "subtitle1": "",
+    "subtitle2": "",
+    "image": "",
+    "company": "",
+    "role": "",
+    "spentTime": "",
+    "skills": [""],
+    "link": "",
+    "text": "",
+    "goalsBackground": "",
+    "goalsText": "",
+    "goals": [""],
+    "methods": [
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" },
+      { "img": "", "title": "", "text": "" }
+    ],
+    "microAnimationText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat.",
+    "aboutProjectText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat. ",
+    "sliderImages": ["", "", "", "", "", ""],
+    "analytics": [
+      {
+        "icon": "",
+        "title": "",
+        "text": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "text": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "text": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "text": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "text": ""
+      }
     ]
   }
 ]

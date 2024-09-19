@@ -14,10 +14,20 @@ export interface IProject {
   goalsText: string;
   goals: string[];
   methods: IMethod[];
+  microAnimationText: string;
+  aboutProjectText: string;
+  sliderImages: string[];
+  analytics: IAnalytics[];
 }
 
 interface IMethod {
   img: string;
+  title: string;
+  text: string;
+}
+
+interface IAnalytics {
+  icon: string;
   title: string;
   text: string;
 }
