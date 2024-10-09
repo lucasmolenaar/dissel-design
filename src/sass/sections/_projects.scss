@@ -18,8 +18,9 @@
     gap: 2rem;
 
     @include respond(md) {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      // display: grid;
+      // grid-template-columns: repeat(12, 1fr);
+      flex-direction: row;
       gap: 1.2rem;
       margin-bottom: 8rem;
     }

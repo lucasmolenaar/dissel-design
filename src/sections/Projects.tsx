@@ -36,7 +36,7 @@ const Projects = () => {
             link='/project/ziggo-dome'
           />
 
-          <ProjectCard
+          {/* <ProjectCard
             topTitle={'Marktzicht'}
             year={'2023'}
             image={'/images/placeholder.jpg'}
@@ -46,7 +46,7 @@ const Projects = () => {
             dev
             color='#743ecc'
             link='/project/ziggo-dome'
-          />
+          /> */}
         </div>
 
         <div className='projects__cases'>

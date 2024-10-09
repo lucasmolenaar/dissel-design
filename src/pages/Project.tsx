@@ -20,7 +20,7 @@ const Project = () => {
   );
 
   useEffect(() => {
-    const foundProject = projects.find(p => p.slug === slug);
+    const foundProject = projects.find((p) => p.slug === slug);
     setProject(foundProject);
   }, []);
 
@@ -161,60 +161,25 @@ const Project = () => {
 
           <div className='project__content2'>
             <div className='project__content2-challenge'>
-              <h4>Design Challenge</h4>
+              <h4>{project?.textTitle1}</h4>
 
-              <p>
-                Lorem ipsum dolor sit amet consectetur. A eget phasellus sit
-                porttitor. Semper ut non est hac. Velit dignissim sodales
-                pellentesque ultrices libero rhoncus. Cras porta duis elementum
-                sem tempor turpis mi sed turpis.
-              </p>
+              <p>{project?.textText1}</p>
             </div>
 
             <div className='project__content2-research'>
-              <h4>UX-Research</h4>
+              <h4>{project?.textTitle2}</h4>
 
-              <p>
-                Uit onderzoek is gebleken dat meer dan 76% van de huidige Ziggo
-                Dome-gebruikers hun mobiele apparaat gebruikt. De grootste
-                doelgroep is tussen de 25 en 34 jaar, maar opmerkelijk is dat
-                alle leeftijdsgroepen significant gebruikmaken van mobiele
-                apparaten, inclusief de oudere generatie. Om hierop in te
-                spelen, richten we bij het redesign op focus mobile-first.
-                <br />
-                <br />
-                In de afgelopen 10 jaar is het schermformaat van mobiele
-                telefoons verdubbeld. Op kleine smartphones was elk gebied
-                vrijwel gemakkelijk te bereiken, maar het bovenste gedeelte is
-                nu onbereikbaar zonder de houding van je hand te veranderen.
-                Voor duimbewegingen op smartphones zijn bepaalde zones sneller
-                en makkelijker te bereiken dan andere zones. Door het
-                implementeren van een bottom-navigatie worden de belangrijkste
-                elementen onderaan de pagina geplaatst. De secundaire items
-                worden naar boven verplaatst. De gebruikers zullen hierdoor
-                gebruiksvriendelijker door de Ziggo Dome Webapplicatie navigeren
-                en dat biedt een comfortabele interactie met de hand en duim.
-                <br />
-                <br />
-                Naar aanleiding van de actuele UX-trends uit 2023 zijn er
-                diverse innovaties geïntegreerd in de interface om de
-                gebruikerservaring intuïtiever, gebruiksvriendelijker en visueel
-                aantrekkelijker te maken voor verschillende doelgroepen. Enkele
-                belangrijke elementen die hierbij een rol spelen zijn: dynamic
-                scrolling, animation card transition, dark-modus,
-                micro-interactions en het gebruiken van grote afbeeldingen die
-                worden omgezet in video.
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur. A eget phasellus sit
-                porttitor. Semper ut non est hac. Velit dignissim sodales
-                pellentesque ultrices libero rhoncus. Cras porta duis elementum
-                sem tempor turpis mi sed turpis.
-              </p>
+              <p
+                dangerouslySetInnerHTML={{ __html: project?.textText2 ?? '' }}
+              ></p>
             </div>
           </div>
 
-          <ul className='project__methods'>
+          <ul
+            className={`project__methods ${
+              slug === 'ziggo-dome' ? 'ziggo' : ''
+            }`}
+          >
             {project?.methods.map((_, index) => (
               <li key={index}>
                 <img src='' alt='' />
@@ -235,41 +200,35 @@ const Project = () => {
           </ul>
 
           <div className='project__microanimation'>
-            <h4>Micro-animatie</h4>
+            <h4>{project?.textTitle3}</h4>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida
-              congue adipiscing lobortis. At neque commodo consectetur sed diam
-              sed. Pulvinar iaculis commodo phasellus sit donec eget enim
-              gravida sit. At volutpat vestibulum dolor scelerisque suspendisse
-              nibh quam. Urna gravida eget dui condimentum tempor dignissim at
-              elit. Neque arcu ac et tortor sapien consequat.
-            </p>
+            <p
+              dangerouslySetInnerHTML={{ __html: project?.textText3 ?? '' }}
+            ></p>
           </div>
 
-          <div className='project__microanimation-video'></div>
+          {slug === 'ziggo-dome' && (
+            <>
+              <div className='project__microanimation-video'></div>
 
-          <div className='project__discover'>
-            <h4>Ontdek de Ziggo Dome</h4>
+              <div className='project__discover'>
+                <h4>{project?.textTitle4}</h4>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida
-              congue adipiscing lobortis. At neque commodo consectetur sed diam
-              sed. Pulvinar iaculis commodo phasellus sit donec eget enim
-              gravida sit. At volutpat vestibulum dolor scelerisque suspendisse
-              nibh quam. Urna gravida eget dui condimentum tempor dignissim at
-              elit. Neque arcu ac et tortor sapien consequat.
-            </p>
-          </div>
+                <p
+                  dangerouslySetInnerHTML={{ __html: project?.textText4 ?? '' }}
+                ></p>
+              </div>
+            </>
+          )}
 
           <ProjectSlider />
 
           <ul className='project__analytics'>
             {/* eslint-disable-next-line */}
-            {project?.analytics.map(({ title, text }, index) => (
+            {project?.analytics.map(({ icon, title, text }, index) => (
               <li key={index}>
-                {/* <img src={''} alt='Icon' /> */}
-                <div></div>
+                <img src={icon} alt='Icon' />
+                {/* <div></div> */}
 
                 <h4 className={`${index === 3 || index === 4 ? 'small' : ''}`}>
                   {title}
@@ -283,9 +242,9 @@ const Project = () => {
           <div className='project__end'>
             <h4>Next Project</h4>
 
-            <h2>{project?.title}</h2>
+            <h2>{project?.nextProjectTitle}</h2>
 
-            <h3>{project?.subtitle1}</h3>
+            <h3>{project?.nextProjectSubtitle}</h3>
 
             <div className='project__end-buttons'>
               <a href='/'>
@@ -293,7 +252,7 @@ const Project = () => {
                 Back to home
               </a>
 
-              <a href='/'>
+              <a href={project?.nextProjectLink}>
                 Next project
                 <FaArrowRightLong />
               </a>
