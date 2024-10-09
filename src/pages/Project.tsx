@@ -3,13 +3,13 @@ import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import Grid from '../layouts/Grid';
-import Image from '/images/placeholder.jpg';
 import { IProject } from '../types/Project';
 import projects from '../assets/data/projects.json';
 import ProjectNav from '../layouts/ProjectNav';
 import useScreenWidth from '../hooks/useScreenWidth';
 import ProjectSlider from '../components/ProjectSlider';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
+import { RxExternalLink } from 'react-icons/rx';
 
 const Project = () => {
   const { slug } = useParams();
@@ -42,7 +42,7 @@ const Project = () => {
         <Grid>
           <div className='project__container'>
             <motion.img
-              src={Image}
+              src={project?.logo}
               alt='Logo'
               className='project__logo'
               initial={{ opacity: 0, y: 50 }}
@@ -76,7 +76,7 @@ const Project = () => {
             </motion.h3>
 
             <motion.img
-              src={Image}
+              src={project?.image}
               alt='Header Image'
               className='project__image'
               initial={{ opacity: 0, y: 50 }}
@@ -180,21 +180,13 @@ const Project = () => {
               slug === 'ziggo-dome' ? 'ziggo' : ''
             }`}
           >
-            {project?.methods.map((_, index) => (
+            {project?.methods.map((method, index) => (
               <li key={index}>
-                <img src='' alt='' />
+                <img src={method.img} alt={method.title} />
 
-                <h4>Title {index + 1}</h4>
+                <h4>{method.title}</h4>
 
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Auctor felis
-                  condimentum fermentum donec in cras at pellentesque in. Vel a
-                  facilisis nam risus in sit potenti leo. Enim ut integer id
-                  aliquam tempus pellentesque. Vestibulum quisque aliquam
-                  scelerisque quam purus in auctor vulputate. Cursus praesent
-                  aliquet at auctor est consequat. Consequat in lobortis odio
-                  sem sit.
-                </p>
+                <p>{method.text}</p>
               </li>
             ))}
           </ul>
@@ -209,7 +201,11 @@ const Project = () => {
 
           {slug === 'ziggo-dome' && (
             <>
-              <div className='project__microanimation-video'></div>
+              <div className='project__microanimation-video'>
+                <video autoPlay muted loop playsInline>
+                  <source src='/images/ZiggoDome/ziggodome-animatie.mp4' />
+                </video>
+              </div>
 
               <div className='project__discover'>
                 <h4>{project?.textTitle4}</h4>
@@ -217,11 +213,18 @@ const Project = () => {
                 <p
                   dangerouslySetInnerHTML={{ __html: project?.textText4 ?? '' }}
                 ></p>
+
+                <a
+                  href='https://ziggodome.nl/plattegrond/beganegrond'
+                  target='_blank'
+                >
+                  Bekijk de plattegrond <RxExternalLink size={20} />
+                </a>
               </div>
             </>
           )}
 
-          <ProjectSlider />
+          <ProjectSlider images={project?.sliderImages ?? []} />
 
           <ul className='project__analytics'>
             {/* eslint-disable-next-line */}
@@ -258,7 +261,12 @@ const Project = () => {
               </a>
             </div>
 
-            <div className='project__end-image'></div>
+            <div className='project__end-image'>
+              <img
+                src={project?.nextProjectImage}
+                alt={project?.nextProjectTitle}
+              />
+            </div>
           </div>
         </Grid>
       </main>

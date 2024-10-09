@@ -5,7 +5,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Autoplay } from 'swiper/modules';
 
-const ProjectSlider = () => {
+interface SliderProps {
+  images: string[];
+}
+
+const ProjectSlider: React.FC<SliderProps> = ({ images }) => {
   return (
     <>
       <Swiper
@@ -32,12 +36,17 @@ const ProjectSlider = () => {
         modules={[Pagination, Autoplay]}
         className='projectslider'
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        {images.map((image: string, index: number) => (
+          <SwiperSlide key={index}>
+            <img src={image} alt={`Image ${index}`} />
+          </SwiperSlide>
+        ))}
+        {/* <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide> */}
       </Swiper>
     </>
   );

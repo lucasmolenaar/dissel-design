@@ -482,7 +482,7 @@
 
     &.ziggo {
       @include respond(mdlg) {
-        grid-template-rows: repeat(22, 4.8rem);
+        grid-template-rows: repeat(22, 4.4rem);
       }
     }
 
@@ -622,6 +622,30 @@
       }
     }
 
+    a {
+      font-size: 1.5rem;
+      color: $color-white;
+      padding: 1rem 1.2rem;
+      border: 2px solid #f29400;
+      width: max-content;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-top: 2rem;
+
+      @include respond(smmd) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(mdlg) {
+        grid-column: 3 / -1;
+        font-size: 1.8rem;
+        padding: 1.2rem 2.4rem;
+      }
+    }
+
     &-video {
       grid-column: content-start / content-end;
       width: 100%;
@@ -647,6 +671,13 @@
 
       @include respond(xl) {
         height: 80rem;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2.4rem;
       }
     }
   }
@@ -878,14 +909,22 @@
 
       @include respond(mdlg) {
         width: 88.8rem;
-        height: 36rem;
+        height: 48rem;
         margin-bottom: 6rem;
       }
 
       @include respond(xl) {
         margin-bottom: 8rem;
         width: 120.8rem;
-        height: 48rem;
+        height: 62rem;
+      }
+
+      img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2.4rem;
       }
     }
   }

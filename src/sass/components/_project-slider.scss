@@ -27,11 +27,11 @@
     height: 42rem;
 
     @include respond(smmd) {
-      height: 58rem;
+      height: 42rem;
     }
 
     @include respond(xl) {
-      height: 72rem;
+      height: 60rem;
     }
   }
 
@@ -55,6 +55,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 2rem;
   }
 
   .swiper-pagination {

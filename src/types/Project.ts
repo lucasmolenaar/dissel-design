@@ -29,6 +29,7 @@ export interface IProject {
   nextProjectTitle: string;
   nextProjectSubtitle: string;
   nextProjectLink: string;
+  nextProjectImage: string;
 }
 
 interface IMethod {

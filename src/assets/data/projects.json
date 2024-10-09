@@ -1,11 +1,11 @@
 [
   {
     "slug": "ziggo-dome",
-    "logo": "",
+    "logo": "/images/ZiggoDome/ziggodome-logo.svg",
     "title": "Ziggo Dome",
     "subtitle1": "Online Ervaring",
     "subtitle2": "Redesign - Juli 2024",
-    "image": "/images/placeholder.jpg",
+    "image": "/images/ZiggoDome/ziggodome-hero.jpg",
     "company": "Ziggo Dome",
     "role": "UX/UI Designer",
     "spentTime": "12 maanden",
@@ -33,16 +33,38 @@
     "textTitle3": "Micro-animatie",
     "textText3": "Bij het creëren van micro-animaties tijdens het Ziggo Dome project helpen we de kloof tussen gebruikersintentie en systeemreactie te overbruggen door visuele aanwijzingen te bieden en interacties natuurlijker te maken. Daarnaast versterken ze de <span>engagement</span> van de gebruiker en dragen ze bij aan een vloeiende flow, wat resulteert in een <span>aangenamere ervaring</span>.",
     "textTitle4": "Ontdek de Ziggo Dome",
-    "textText4": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat. ",
+    "textText4": "Voor bezoekers die nog niet in de Ziggo Dome zijn geweest, bieden we een interactieve 3D-plattegrond waarmee je een helder, visueel beeld krijgt van de binnenkant van de Ziggo Dome. Je kunt virtueel rondkijken op de begane grond, eerste en tweede verdieping en een kijkje nemen bij de tribune en het podium in de grote zaal. Heb je nu geen tijd om de plattegrond te verkennen? Geen probleem! Scroll naar beneden om alvast een aantal sfeerbeelden van het website redesign te bekijken.",
     "methods": [
-      { "img": "", "title": "", "text": "" },
-      { "img": "", "title": "", "text": "" },
-      { "img": "", "title": "", "text": "" },
-      { "img": "", "title": "", "text": "" }
+      {
+        "img": "/images/ZiggoDome/ziggodome-4block-research.webp",
+        "title": "User Experience Design",
+        "text": "Ik heb grondig research gedaan naar user-friendly navigeren op basis van drie handgrepen die het gebruik van een smartphone bepalen. Mijn secondaire onderzoek ging over wat voor soorten UI-componenten voor mobiele gebruikers mogelijk zijn en heb ik gekeken naar de nieuwste UX-trends uit 2023."
+      },
+      {
+        "img": "/images/ZiggoDome/ziggodome-4block-wireframe.webp",
+        "title": "Wireframing",
+        "text": "Tijdens het Ziggo Dome project hebben we wekelijkse interne meetings gehouden om de functionaliteiten, complexe uitdagingen en knelpunten te bespreken. Dit proces vereiste nauw overleg met de developers om haalbare oplossingen te identificeren en te bepalen welke technische overwegingen essentieel waren voor het succes van het project. "
+      },
+      {
+        "img": "/images/ZiggoDome/ziggodome-4block-responsive.webp",
+        "title": "Responsive design",
+        "text": "Was essentieel voor de website om ervoor te zorgen dat bezoekers een consistente en gebruiksvriendelijke ervaring hebben, ongeacht het apparaat dat ze gebruiken. Aangezien veel bezoekers de site via mobiele telefoons bezoeken, moest de inhoud op elk schermformaat optimaal zichtbaar en functioneel zijn."
+      },
+      {
+        "img": "/images/ZiggoDome/ziggodome-4block-styleguide.webp",
+        "title": "Styleguide",
+        "text": "Door alle regels vast te leggen was het voor onze developers van Touch Creative erg makkelijk om alle richtlijnen en ontwerpkeuzes duidelijk vast te leggen in een document. Denk hierbij aan de kleuren, typografie, iconen, knoppen (en hover-states), micro-animaties enzovoorts.. Alles wat bij een webdesign komt kijken."
+      }
     ],
     "microAnimationText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat.",
     "aboutProjectText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat. ",
-    "sliderImages": ["", "", "", "", "", ""],
+    "sliderImages": [
+      "/images/ZiggoDome/ziggodome-slider-slider1.webp",
+      "/images/ZiggoDome/ziggodome-slider-slider2.webp",
+      "/images/ZiggoDome/ziggodome-slider-slider3.webp",
+      "/images/ZiggoDome/ziggodome-slider-slider4.webp",
+      "/images/ZiggoDome/ziggodome-slider-slider5.webp"
+    ],
     "analytics": [
       {
         "icon": "/svg/ziggodome/bezoekers.svg",
@@ -72,7 +94,8 @@
     ],
     "nextProjectTitle": "New Edition",
     "nextProjectSubtitle": "Driven by Living",
-    "nextProjectLink": "/project/new-edition"
+    "nextProjectLink": "/project/new-edition",
+    "nextProjectImage": "/images/NewEdition/Newedition-hero.webp"
   },
   {
     "slug": "new-edition",
