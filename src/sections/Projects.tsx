@@ -14,25 +14,25 @@ const Projects = () => {
             topTitle={'Ziggo Dome'}
             year={'2024'}
             large
-            image={'/images/placeholder.jpg'}
+            image={'/images/home/hp_hero-ziggodome.webp'}
             bottomTitle={'Lorem ipsum'}
             bottomSubtitle={'Mobile first'}
             ux
             design
             dev
-            color='#58c556'
+            color='#1D1D22'
             link='/project/ziggo-dome'
           />
 
           <ProjectCard
             topTitle={'New Edition'}
             year={'2023'}
-            image={'/images/placeholder.jpg'}
+            image={'/images/home/hp_hero_newedition.webp'}
             bottomTitle={'Redesign'}
             bottomSubtitle={'Driven by living'}
             ux
             design
-            color='#1da4ff'
+            color='#7E7469'
             link='/project/ziggo-dome'
           />
 

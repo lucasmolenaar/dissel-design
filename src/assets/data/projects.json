@@ -99,11 +99,11 @@
   },
   {
     "slug": "new-edition",
-    "logo": "",
+    "logo": "/images/NewEdition/newedition-logo.svg",
     "title": "New Edition",
     "subtitle1": "Driven by Living",
     "subtitle2": "Redesign - Januari 2024",
-    "image": "",
+    "image": "/images/NewEdition/Newedition-hero.webp",
     "company": "New Edition",
     "role": "UX/UI Designer",
     "spentTime": "4 maanden",
@@ -115,7 +115,7 @@
     ],
     "link": "https://www.newedition.nl/",
     "text": "New Edition, een Nederlands bedrijf, is gespecialiseerd in de ontwikkeling voor merken zoals <span>Pip Studio</span> en <span>VT Wonen</span>. Van servies en bestek tot tassen en loungewear. Na 10 jaar wilden oprichters Niels en Wouter een nieuwe <span>visual identity</span> en <span>merkstrategie</span> die persoonlijker aanvoelt en hun identiteit en werkwijze beter weergeeft. <br/><br/> Als gepassioneerde woonexperts realiseren ze wereldwijd concepten met een klein, toegewijd team, gelovend dat alles mogelijk is, aangedreven door hun <span>passie</span> voor wonen.",
-    "goalsBackground": "",
+    "goalsBackground": "/images/NewEdition/Newedition-doelstellingen-background.webp",
     "goalsText": "De nieuwe website zal een toegangspoort worden voor zowel gewaardeerde bestaande verkooppunten als nieuwe verkooppunten. Met geoptimaliseerde navigatie en intuïtieve functionaliteiten, en om makkelijk naar de Order Portal te komen die ontworpen is om de efficiëntie te vergroten en bestelprocessen te vereenvoudigen.",
     "goals": [
       "Optimalisatie van de navigatie: verbetert de gebruikerservaring door de navigatiestructuur intuïtiever te maken, waardoor gebruikers sneller en gemakkelijker toegang krijgen tot de gewenste informatie.",
@@ -133,19 +133,24 @@
     "textText4": "",
     "methods": [
       {
-        "img": "",
+        "img": "/images/NewEdition/NewEdition-4blocks-Wireframing1.webp",
         "title": "Wireframing",
         "text": "Voor dit project hebben we een gestructureerd schema gevolgd, waarbij elke fase, inclusief de wireframe-fase, werd afgesloten met één gerichte feedbackronde."
       },
       {
-        "img": "",
+        "img": "/images/NewEdition/NewEdition-4blocks-Styleguidebook2.webp",
         "title": "Styleguide",
         "text": "Er is een uitgebreide styleguide ontworpen om consistentie en merkidentiteit te waarborgen tijdens het ontwikkelproces. Aangezien externe developers verantwoordelijk waren voor de afronding van het project, diende de styleguide als een cruciale leidraad om een uniforme uitvoering te garanderen."
       }
     ],
     "microAnimationText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat.",
     "aboutProjectText": "Lorem ipsum dolor sit amet consectetur. Feugiat nunc gravida congue adipiscing lobortis. At neque commodo consectetur sed diam sed. Pulvinar iaculis commodo phasellus sit donec eget enim gravida sit. At volutpat vestibulum dolor scelerisque suspendisse nibh quam. Urna gravida eget dui condimentum tempor dignissim at elit. Neque arcu ac et tortor sapien consequat. ",
-    "sliderImages": ["", "", "", "", "", ""],
+    "sliderImages": [
+      "/images/NewEdition/newedition-slider-slider1.webp",
+      "/images/NewEdition/newedition-slider-slider2.webp",
+      "/images/NewEdition/newedition-slider-slider3.webp",
+      "/images/NewEdition/newedition-slider-slider4.webp"
+    ],
     "analytics": [
       {
         "icon": "/svg/newedition/landen.svg",
@@ -175,6 +180,7 @@
     ],
     "nextProjectTitle": "Ziggo Dome",
     "nextProjectSubtitle": "Online ervaring",
-    "nextProjectLink": "/project/ziggo-dome"
+    "nextProjectLink": "/project/ziggo-dome",
+    "nextProjectImage": "/images/ZiggoDome/ziggodome-hero.jpg"
   }
 ]

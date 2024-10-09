@@ -25,13 +25,19 @@ const Project = () => {
   }, []);
 
   useEffect(() => {
-    setGoalsBackground(
-      screenwidth < 500
-        ? '/images/goals-background-mobile.jpg'
-        : screenwidth < 1024
-        ? '/images/goals-background-tablet.jpg'
-        : '/images/goals-background-desktop.jpg'
-    );
+    if (slug === 'new-edition') {
+      setGoalsBackground(
+        '/images/NewEdition/Newedition-doelstellingen-background.webp'
+      );
+    } else {
+      setGoalsBackground(
+        screenwidth < 500
+          ? '/images/goals-background-mobile.jpg'
+          : screenwidth < 1024
+          ? '/images/goals-background-tablet.jpg'
+          : '/images/goals-background-desktop.jpg'
+      );
+    }
   }, [screenwidth]);
 
   return (
