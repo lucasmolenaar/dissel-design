@@ -33,7 +33,7 @@ const Projects = () => {
             ux
             design
             color='#7E7469'
-            link='/project/ziggo-dome'
+            link='/project/new-edition'
           />
 
           {/* <ProjectCard
@@ -57,33 +57,33 @@ const Projects = () => {
 
           <ul className='projects__cases-list'>
             <CaseCard
-              caseName={'Case 1'}
-              label={'Mobile'}
+              caseName={'Marktzicht'}
+              label={'Restaurant'}
+              image='/images/Cases/Marktzicht/Marktzicht-slider1.webp'
+            />
+            <CaseCard
+              caseName={'De MuziekSpeelplaats'}
+              label={'Stichting'}
+              image='/images/Cases/MSP/MSP-slider-slider1.webp'
+            />
+            <CaseCard
+              caseName={'Natasja Lammers'}
+              label={'Portfolio'}
               image='/images/placeholder.jpg'
             />
             <CaseCard
-              caseName={'Case 2'}
-              label={'Web App'}
+              caseName={'DTX'}
+              label={'IT Bedrijf'}
               image='/images/placeholder.jpg'
             />
             <CaseCard
-              caseName={'Case 3'}
-              label={'Web App'}
-              image='/images/placeholder.jpg'
+              caseName={'16.08 Streetwear'}
+              label={'Webshop'}
+              image='/images/Cases/16.08/mockup-1.webp'
             />
             <CaseCard
-              caseName={'Case 4'}
-              label={'Webdesign'}
-              image='/images/placeholder.jpg'
-            />
-            <CaseCard
-              caseName={'Case 5'}
-              label={'Webdesign'}
-              image='/images/placeholder.jpg'
-            />
-            <CaseCard
-              caseName={'Case 6'}
-              label={'Webdesign'}
+              caseName={'Regius College Sporters'}
+              label={'Scriptie HVA'}
               image='/images/placeholder.jpg'
             />
           </ul>

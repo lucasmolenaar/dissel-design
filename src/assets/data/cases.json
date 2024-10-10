@@ -1,24 +1,34 @@
 [
   {
-    "title": "Case 1",
+    "title": "Marktzicht",
     "link": "https://google.com/",
     "company": "Google",
     "year": "2024",
     "type": "Design",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nesciunt at dolore doloribus debitis odit quod fugiat, quaerat consequatur ea laboriosam quibusdam ex, sed soluta labore? Ab, velit commodi est ipsa quaerat dolorum quis provident labore porro atque vel quae aliquid inventore, ex eveniet qui vitae distinctio aliquam dolore tenetur dignissimos impedit sequi asperiores? Iste, necessitatibus, ex nam accusamus nesciunt illo rerum facilis ullam quos nisi et maiores mollitia quia tempora dolor laborum dolores, a officiis quo eveniet dolore libero. Omnis est explicabo blanditiis ad nobis! Esse praesentium perferendis hic saepe quam quidem quos vel voluptatem eum repudiandae incidunt ex temporibus magnam ullam alias consectetur, optio tempora dolore voluptas sunt commodi! Est rem quibusdam cum, incidunt architecto quis sint animi laborum repellat nam impedit veritatis fugiat, dolorem iste sequi officiis eveniet praesentium exercitationem aspernatur laudantium repudiandae. Illo iure accusantium illum porro quisquam tenetur, quia nam tempora voluptatum corrupti minima quidem qui vero blanditiis quis. Laboriosam, iure praesentium vero consectetur explicabo molestias tempore aspernatur omnis officiis esse quia perspiciatis voluptates neque quidem in architecto maxime sed officia aperiam nostrum animi eius recusandae sint. Excepturi velit modi eligendi, temporibus mollitia doloribus reiciendis, quis sapiente totam molestias impedit doloremque voluptatem officiis aperiam deserunt.",
-    "images": ["", "", ""]
+    "images": [
+      "/images/Cases/Marktzicht/Marktzicht-slider1.webp",
+      "/images/Cases/Marktzicht/Marktzicht-slider2.webp",
+      "/images/Cases/Marktzicht/Marktzicht-slider3.webp"
+    ]
   },
   {
-    "title": "Case 2",
+    "title": "De MuziekSpeelplaats",
     "link": "",
     "company": "Google",
     "year": "2024",
     "type": "Development",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nesciunt at dolore doloribus debitis odit quod fugiat, quaerat consequatur ea laboriosam quibusdam ex, sed soluta labore? Ab, velit commodi est ipsa quaerat dolorum quis provident labore porro atque vel quae aliquid inventore, ex eveniet qui vitae distinctio aliquam dolore tenetur dignissimos impedit sequi asperiores? Iste, necessitatibus, ex nam accusamus nesciunt illo rerum facilis ullam quos nisi et maiores mollitia quia tempora dolor laborum dolores, a officiis quo eveniet dolore libero. Omnis est explicabo blanditiis ad nobis! Esse praesentium perferendis hic saepe quam quidem quos vel voluptatem eum repudiandae incidunt ex temporibus magnam ullam alias consectetur, optio tempora dolore voluptas sunt commodi! Est rem quibusdam cum, incidunt architecto quis sint animi laborum repellat nam impedit veritatis fugiat, dolorem iste sequi officiis eveniet praesentium exercitationem aspernatur laudantium repudiandae. Illo iure accusantium illum porro quisquam tenetur, quia nam tempora voluptatum corrupti minima quidem qui vero blanditiis quis. Laboriosam, iure praesentium vero consectetur explicabo molestias tempore aspernatur omnis officiis esse quia perspiciatis voluptates neque quidem in architecto maxime sed officia aperiam nostrum animi eius recusandae sint. Excepturi velit modi eligendi, temporibus mollitia doloribus reiciendis, quis sapiente totam molestias impedit doloremque voluptatem officiis aperiam deserunt.",
-    "images": ["", "", ""]
+    "images": [
+      "/images/Cases/MSP/MSP-slider-slider1.webp",
+      "/images/Cases/MSP/MSP-slider-slider2.webp",
+      "/images/Cases/MSP/MSP-slider-slider3.webp",
+      "/images/Cases/MSP/MSP-slider-slider4.webp",
+      "/images/Cases/MSP/MSP-slider-slider5.webp"
+    ]
   },
   {
-    "title": "Case 3",
+    "title": "Natasja Lammers",
     "link": "",
     "company": "Google",
     "year": "2024",
@@ -27,7 +37,7 @@
     "images": ["", "", ""]
   },
   {
-    "title": "Case 4",
+    "title": "DTX",
     "link": "",
     "company": "Google",
     "year": "2024",
@@ -36,16 +46,20 @@
     "images": ["", "", ""]
   },
   {
-    "title": "Case 5",
+    "title": "16.08 Streetwear",
     "link": "",
     "company": "Google",
     "year": "2024",
     "type": "Design",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nesciunt at dolore doloribus debitis odit quod fugiat, quaerat consequatur ea laboriosam quibusdam ex, sed soluta labore? Ab, velit commodi est ipsa quaerat dolorum quis provident labore porro atque vel quae aliquid inventore, ex eveniet qui vitae distinctio aliquam dolore tenetur dignissimos impedit sequi asperiores? Iste, necessitatibus, ex nam accusamus nesciunt illo rerum facilis ullam quos nisi et maiores mollitia quia tempora dolor laborum dolores, a officiis quo eveniet dolore libero. Omnis est explicabo blanditiis ad nobis! Esse praesentium perferendis hic saepe quam quidem quos vel voluptatem eum repudiandae incidunt ex temporibus magnam ullam alias consectetur, optio tempora dolore voluptas sunt commodi! Est rem quibusdam cum, incidunt architecto quis sint animi laborum repellat nam impedit veritatis fugiat, dolorem iste sequi officiis eveniet praesentium exercitationem aspernatur laudantium repudiandae. Illo iure accusantium illum porro quisquam tenetur, quia nam tempora voluptatum corrupti minima quidem qui vero blanditiis quis. Laboriosam, iure praesentium vero consectetur explicabo molestias tempore aspernatur omnis officiis esse quia perspiciatis voluptates neque quidem in architecto maxime sed officia aperiam nostrum animi eius recusandae sint. Excepturi velit modi eligendi, temporibus mollitia doloribus reiciendis, quis sapiente totam molestias impedit doloremque voluptatem officiis aperiam deserunt.",
-    "images": ["", "", ""]
+    "images": [
+      "/images/Cases/16.08/wireframe-slider1.webp",
+      "/images/Cases/16.08/wireframe-slider2.webp",
+      "/images/Cases/16.08/wireframe-slider4.webp"
+    ]
   },
   {
-    "title": "Case 6",
+    "title": "Regius College Sporters",
     "link": "",
     "company": "Google",
     "year": "2024",

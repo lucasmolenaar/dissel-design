@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper/types';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { HiOutlineExternalLink } from 'react-icons/hi';
@@ -25,7 +25,7 @@ const CasePopup: React.FC<PopupProps> = ({ setCaseOpen, title }) => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   useEffect(() => {
-    const foundCase = cases.find(singleCase => singleCase.title === title);
+    const foundCase = cases.find((singleCase) => singleCase.title === title);
     const color =
       foundCase?.type === 'UX-Research'
         ? '#58c556'
@@ -40,7 +40,7 @@ const CasePopup: React.FC<PopupProps> = ({ setCaseOpen, title }) => {
   }, [selectedCase]);
 
   useEffect(() => {
-    document.addEventListener('keydown', e => {
+    document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         setCaseOpen(false);
       }
@@ -72,15 +72,21 @@ const CasePopup: React.FC<PopupProps> = ({ setCaseOpen, title }) => {
           >
             <Swiper
               pagination={true}
-              modules={[Pagination]}
+              modules={[Pagination, Autoplay]}
               className='mySwiper'
               loop
-              onSwiper={swiper => {
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              onSwiper={(swiper) => {
                 swiperRef.current = swiper;
               }}
             >
-              {selectedCase?.images.map((_, index) => (
-                <SwiperSlide key={index}>Image {index + 1}</SwiperSlide>
+              {selectedCase?.images.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <img src={image} alt={`image + ${index}`} />
+                </SwiperSlide>
               ))}
             </Swiper>
 

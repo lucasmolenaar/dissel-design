@@ -136,7 +136,7 @@ const Project = () => {
           </div>
 
           <div
-            className='project__goalsbackground'
+            className={`project__goalsbackground`}
             style={{
               backgroundImage: `linear-gradient(
               180deg,
