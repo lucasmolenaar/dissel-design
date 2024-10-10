@@ -97,23 +97,31 @@
 
   &__image {
     width: 100%;
-    height: 30rem;
+    height: 24rem;
     object-fit: cover;
     border-radius: 1.6rem;
     margin-bottom: 1.6rem;
+
+    @include respond(sm) {
+      height: 58vw;
+    }
 
     @include respond(smmd) {
       height: 42rem;
       margin-bottom: 2.4rem;
     }
 
+    @include respond(md) {
+      height: 50rem;
+    }
+
     @include respond(mdlg) {
-      height: 72rem;
+      height: 60rem;
       margin-bottom: 9.2rem;
     }
 
     @include respond(xl) {
-      height: 80rem;
+      height: 68rem;
       margin-bottom: 12rem;
     }
   }
@@ -323,6 +331,7 @@
   &__goalsbackground {
     grid-column: full-start / full-end;
     background-size: cover;
+    background-position: center;
   }
 
   &__goals {
@@ -488,9 +497,13 @@
 
     li {
       width: 100%;
-      padding: 3.2rem 2rem;
+      padding: 2.4rem 2rem;
       background-color: rgba($color: $color-white, $alpha: 0.05);
       border-radius: 1.2rem;
+
+      @include respond(mdlg) {
+        padding: 3.2rem 2.4rem;
+      }
 
       &:nth-child(1) {
         grid-row: 1 / 11;
@@ -891,7 +904,7 @@
 
     &-image {
       width: 30rem;
-      height: 18rem;
+      height: 22rem;
       background-color: #353535;
       // border-radius: 2.4rem 2.4rem 0 0;
       border-radius: 2.4rem;
@@ -899,7 +912,7 @@
 
       @include respond(smmd) {
         width: 56.2rem;
-        height: 28rem;
+        height: 36rem;
       }
 
       @include respond(md) {
@@ -916,7 +929,7 @@
       @include respond(xl) {
         margin-bottom: 8rem;
         width: 120.8rem;
-        height: 62rem;
+        height: 68rem;
       }
 
       img {

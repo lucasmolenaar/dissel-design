@@ -63,7 +63,7 @@
     background-color: #2f2f2f;
     width: max-content;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 3.2rem;
     border-radius: 100px;
     display: flex;
     align-items: center;
@@ -80,11 +80,6 @@
     @include respond(md) {
       width: 1.2rem;
       height: 1.2rem;
-    }
-
-    @include respond(md) {
-      width: 1.6rem;
-      height: 1.6rem;
     }
   }
 

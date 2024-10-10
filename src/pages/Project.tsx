@@ -267,12 +267,12 @@ const Project = () => {
               </a>
             </div>
 
-            <div className='project__end-image'>
+            <a href={project?.nextProjectLink} className='project__end-image'>
               <img
                 src={project?.nextProjectImage}
                 alt={project?.nextProjectTitle}
               />
-            </div>
+            </a>
           </div>
         </Grid>
       </main>
