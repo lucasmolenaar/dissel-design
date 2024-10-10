@@ -55,6 +55,8 @@ const ProjectCard: React.FC<CardProps> = ({
         // style={{ backgroundImage: `url(${image})` }}
       >
         <img src={image} alt='Project image' />
+        <div className='project-card__bottom-overlay'></div>
+
         <div className='project-card__bottom-content'>
           <p className='project-card__bottom-title'>{bottomTitle}</p>
           <p className='project-card__bottom-subtitle'>{bottomSubtitle}</p>

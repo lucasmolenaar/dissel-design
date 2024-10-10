@@ -99,7 +99,7 @@ const Hero = () => {
           >
             Webdesigner /
           </motion.span>
-          <SpinThingy top={''} right={'-5.2rem'} bottom={'4rem'} left={''} />
+          <SpinThingy top={''} right={''} bottom={''} left={''} />
         </motion.h1>
       </Grid>
 

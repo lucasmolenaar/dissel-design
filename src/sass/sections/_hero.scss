@@ -155,6 +155,26 @@
         left: 0.8rem;
       }
     }
+
+    .spinny {
+      display: none;
+      bottom: 4rem;
+      right: -5.2rem;
+
+      @include respond(md) {
+        display: block;
+      }
+
+      @include respond(mdlg) {
+        bottom: 3.2rem;
+        right: 20rem;
+      }
+
+      @include respond(xl) {
+        right: 0;
+        bottom: 5.2rem;
+      }
+    }
   }
 
   &__scroll {
@@ -181,14 +201,6 @@
     svg {
       width: 5.2rem !important;
       height: 5.2rem !important;
-    }
-  }
-
-  .spinny {
-    display: none;
-
-    @include respond(md) {
-      display: block;
     }
   }
 }

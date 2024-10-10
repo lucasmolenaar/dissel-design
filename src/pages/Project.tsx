@@ -26,9 +26,7 @@ const Project = () => {
 
   useEffect(() => {
     if (slug === 'new-edition') {
-      setGoalsBackground(
-        '/images/NewEdition/Newedition-doelstellingen-background.webp'
-      );
+      setGoalsBackground('/images/NewEdition/newedition-goals.png');
     } else {
       setGoalsBackground(
         screenwidth < 500

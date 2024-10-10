@@ -145,22 +145,26 @@ const About = () => {
             <h3>Mijn achtergrond.</h3>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur. Accumsan orci odio in leo.
-              Interdum purus leo aliquet tempor arcu. Ut dui volutpat nunc
-              blandit elementum felis a pretium. Ullamcorper condimentum mattis
-              sed auctor bibendum at sed laoreet.
+              Mijn naam is Tim Disseldorp, een gedreven jongeman uit het
+              Noord-Hollandse Heiloo. Na mijn afstuderen aan de Hogeschool van
+              Amsterdam in 2022, begon mijn carrière bij YourDutchMedia in
+              Hoorn. Hier ontdekte ik mijn passie voor het ontwerpen van
+              gebruiksvriendelijke en esthetische interfaces.
               <br />
               <br />
-              Eu sapien ac sed bibendum quis neque imperdiet amet augue. Rhoncus
-              laoreet eu semper ut. Augue eu purus adipiscing tincidunt varius
-              cras adipiscing diam.
+              Maar ik wist dat er meer in me zat. De afgelopen jaren heb ik
+              geleerd dat groeien betekent dat je soms buiten je comfortzone
+              moet stappen. Daarom besloot ik als ZZP’er mijn eigen weg te gaan.
+              Als zelfstandig ontwerper kan ik nu mijn visie en creativiteit
+              volledig benutten om bedrijven te helpen met intuïtieve en
+              effectieve designs.
               <br />
               <br />
-              Dictum morbi integer eget lorem adipiscing auctor porttitor ipsum
-              urna. Vestibulum mi dictum aenean ullamcorper id lorem cursus
-              pellentesque quis. Vitae euismod eu arcu quis sed enim massa. Nec
-              in volutpat elit luctus. Luctus malesuada vel suspendisse iaculis
-              sed aliquam volutpat.
+              Naast mijn werk vind ik balans essentieel. Ik blijf fysiek en
+              mentaal fit door veel te wandelen, hard te lopen en te zwemmen.
+              Deze activiteiten geven me rust en energie, en vormen een perfecte
+              aanvulling op mijn werk. Met passie en toewijding streef ik naar
+              continue groei en ontwikkeling.
             </p>
           </div>
 
