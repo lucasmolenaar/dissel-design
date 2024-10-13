@@ -21,6 +21,7 @@ import Miro from '/svg/miro.svg';
 import Notion from '/svg/notion.svg';
 import Chat from '/svg/chatgpt.svg';
 import Spotify from '/svg/spotify.svg';
+import PDF from '../assets/files/CV-TimDisseldorp.pdf';
 
 const About = () => {
   const educationItems = [
@@ -83,7 +84,12 @@ const About = () => {
         <SectionTitle title='Over' title2='mij' side={'left'} about />
 
         <div className='about__grid'>
-          <div className='about__image'></div>
+          <div className='about__image'>
+            <img
+              src='/images/home/tim-slider1.jpg'
+              alt='Tim Disseldorp, Dissel Design'
+            />
+          </div>
 
           <div className='about__education'>
             <h3>Opleidingen.</h3>
@@ -114,27 +120,36 @@ const About = () => {
 
             <ul className='about__socials-list'>
               <li>
-                <a href='#'>
+                <a href='mailto:tim.disseldorp@hotmail.com' target='_blank'>
                   <img src={Mail} alt='Mail' />
                 </a>
               </li>
               <li>
-                <a href='#'>
+                <a href='https://dribbble.com/Timotheus23' target='_blank'>
                   <img src={Dribbble} alt='Dribbble' />
                 </a>
               </li>
               <li>
-                <a href='#'>
+                <a
+                  href='https://www.instagram.com/timdisseldorp/?next=%2F'
+                  target='_blank'
+                >
                   <img src={Instagram} alt='Instagram' />
                 </a>
               </li>
               <li>
-                <a href='#'>
+                <a
+                  href='https://x.com/i/flow/login?redirect_after_login=%2Ftim_disseldorp'
+                  target='_blank'
+                >
                   <img src={Twtter} alt='Twtter' />
                 </a>
               </li>
               <li>
-                <a href='#'>
+                <a
+                  href='https://www.linkedin.com/in/timdisseldorp?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
+                  target='_blank'
+                >
                   <img src={LinkedIn} alt='LinkedIn' />
                 </a>
               </li>
@@ -218,9 +233,9 @@ const About = () => {
               ))}
             </ul>
 
-            <button className='about__experience-resume'>
+            <a href={PDF} download className='about__experience-resume'>
               Resume <FiDownload color='#fafafa' />
-            </button>
+            </a>
           </div>
 
           <div className='about__carousel'>
@@ -230,7 +245,9 @@ const About = () => {
               className='mySwiper'
               loop
             >
-              <SwiperSlide>Image 1</SwiperSlide>
+              <SwiperSlide>
+                <img src='/images/home/tim-ydm.jpg' alt='Dissel Design 1' />
+              </SwiperSlide>
               <SwiperSlide>Image 2</SwiperSlide>
               <SwiperSlide>Image 3</SwiperSlide>
             </Swiper>

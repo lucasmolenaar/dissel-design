@@ -17,11 +17,14 @@ const CaseCard: React.FC<CardProps> = ({ caseName, label, image }) => {
 
   return (
     <>
-      <li className='case-card' onClick={() => setCaseOpen(true)}>
+      <li
+        className={`case-card ${label === '' ? 'nomouse' : ''}`}
+        onClick={() => label !== '' && setCaseOpen(true)}
+      >
         <img src={image} alt='Case image' />
         <div className='case-card__overlay'></div>
 
-        <div className='case-card__content'>
+        <div className={`case-card__content ${label === '' ? 'center' : ''}`}>
           <p className='case-card__content-title'>{caseName}</p>
           <p className='case-card__content-label'>{label}</p>
         </div>

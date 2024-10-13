@@ -647,6 +647,7 @@
       justify-content: center;
       gap: 1.2rem;
       margin-top: 2rem;
+      transition: all 0.2s;
 
       @include respond(smmd) {
         font-size: 1.6rem;
@@ -656,6 +657,11 @@
         grid-column: 3 / -1;
         font-size: 1.8rem;
         padding: 1.2rem 2.4rem;
+      }
+
+      &:hover {
+        background-color: #f29400;
+        gap: 1.6rem;
       }
     }
 
@@ -881,6 +887,7 @@
         color: $color-white;
         padding: 1.2rem 2rem;
         font-size: 1.4rem;
+        transition: all 0.2s;
 
         @include respond(mdlg) {
           font-size: 1.6rem;
@@ -888,6 +895,10 @@
 
         @include respond(xl) {
           font-size: 1.8rem;
+        }
+
+        &:hover {
+          gap: 1.6rem;
         }
 
         &:first-child {
@@ -898,6 +909,11 @@
           background-color: #1e1e1e;
           border: 2px solid rgba($color: $color-white, $alpha: 0.3);
           border-radius: 100px;
+          transition: all 0.2s;
+
+          &:hover {
+            background-color: #0183b9;
+          }
         }
       }
     }

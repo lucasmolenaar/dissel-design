@@ -26,6 +26,7 @@
   }
 
   &__image {
+    position: relative;
     width: 100%;
     height: 28rem;
     border-radius: 2.4rem;
@@ -49,6 +50,14 @@
 
     @include respond(xl) {
       height: 44rem;
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 2.4rem;
     }
   }
 
@@ -171,6 +180,17 @@
         height: 4rem;
         border-radius: 50%;
         border: 2px solid rgba($color: $color-white, $alpha: 0.3);
+        transition: all 0.2s;
+
+        &:hover {
+          background-color: #0183b9;
+          border-color: rgba($color: $color-white, $alpha: 0.3);
+
+          img {
+            transform: scale(1.2); // Adjust scale value as needed
+            transition: transform 0.2s;
+          }
+        }
 
         a {
           @include flexCenter;
@@ -180,6 +200,10 @@
           svg {
             width: 2rem;
             height: 2rem;
+          }
+
+          img {
+            transition: all 0.2s;
           }
         }
       }
@@ -386,6 +410,7 @@
       font-family: $font-secondary;
       font-size: 1.6rem;
       gap: 1.6rem;
+      width: fit-content;
     }
   }
 
@@ -431,6 +456,15 @@
 
     .swiper-slide {
       @include flexCenter;
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2.4rem;
+      }
     }
 
     .swiper-pagination-bullet {

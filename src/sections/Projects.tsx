@@ -12,7 +12,7 @@ const Projects = () => {
         <div className='projects__cards'>
           <ProjectCard
             topTitle={'Ziggo Dome'}
-            year={'2024'}
+            year={'JUN 2024'}
             large
             image={'/images/home/hp_hero-ziggodome.webp'}
             bottomTitle={'Lorem ipsum'}
@@ -26,7 +26,7 @@ const Projects = () => {
 
           <ProjectCard
             topTitle={'New Edition'}
-            year={'2023'}
+            year={'JAN 2024'}
             image={'/images/home/hp_hero_newedition.webp'}
             bottomTitle={'Redesign'}
             bottomSubtitle={'Driven by living'}
@@ -59,32 +59,32 @@ const Projects = () => {
             <CaseCard
               caseName={'Marktzicht'}
               label={'Restaurant'}
-              image='/images/Cases/Marktzicht/Marktzicht-slider1.webp'
+              image='/images/cases/Marktzicht/Marktzicht-slider1.webp'
             />
             <CaseCard
               caseName={'De MuziekSpeelplaats'}
               label={'Stichting'}
-              image='/images/Cases/MSP/MSP-slider-slider1.webp'
-            />
-            <CaseCard
-              caseName={'Natasja Lammers'}
-              label={'Portfolio'}
-              image='/images/placeholder.jpg'
-            />
-            <CaseCard
-              caseName={'DTX'}
-              label={'IT Bedrijf'}
-              image='/images/placeholder.jpg'
+              image='/images/cases/MSP/MSP-slider-slider1.webp'
             />
             <CaseCard
               caseName={'16.08 Streetwear'}
               label={'Webshop'}
-              image='/images/Cases/16.08/mockup-1.webp'
+              image='/images/cases/16.08/16.08-slider-slider1.webp'
             />
             <CaseCard
-              caseName={'Regius College Sporters'}
-              label={'Scriptie HVA'}
-              image='/images/placeholder.jpg'
+              caseName={'Dutch Technology Experts'}
+              label={'IT Bedrijf'}
+              image='/images/cases/DTX/dtx-slider-slider1.webp'
+            />
+            <CaseCard
+              caseName={'In progress'}
+              label={''}
+              image='/images/cases/inprogress/inprogress-image.webp'
+            />
+            <CaseCard
+              caseName={'In progress'}
+              label={''}
+              image='/images/cases/inprogress/inprogress-image.webp'
             />
           </ul>
         </div>

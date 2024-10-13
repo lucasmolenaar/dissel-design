@@ -32,6 +32,7 @@
     padding: 1rem 1.2rem;
     border-radius: 100rem;
     border: 2px solid $color-white;
+    background-color: $color-black;
 
     a {
       @include flexCenter;
