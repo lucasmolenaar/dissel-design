@@ -69,4 +69,8 @@
       }
     }
   }
+
+  &__logos {
+    grid-column: full-start / full-end;
+  }
 }

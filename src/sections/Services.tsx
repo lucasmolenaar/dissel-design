@@ -30,7 +30,7 @@ const Services = () => {
         'Competitief analyse.',
         'Usability of A/B testing.',
       ],
-      bgColor: '#059053',
+      bgColor: '#58C556',
     },
     {
       title: 'Webdesign',
@@ -44,7 +44,7 @@ const Services = () => {
         'Figma Prototyping.',
         'Design Systems.',
       ],
-      bgColor: '#2A34D8',
+      bgColor: '#1DA4FF',
     },
     {
       title: 'Development',

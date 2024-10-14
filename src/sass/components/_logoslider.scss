@@ -1,0 +1,61 @@
+.logoslider {
+  margin-top: 8rem;
+  cursor: grab;
+  &:active:hover {
+    cursor: grabbing;
+  }
+
+  img {
+    height: 6rem;
+    transition: all 0.2s;
+
+    @include respond(md) {
+      filter: grayscale(100);
+    }
+
+    @include respond(mdlg) {
+      height: 8rem;
+    }
+
+    @include respond(xl) {
+      height: 9.2rem;
+    }
+  }
+
+  .swiper-wrapper {
+    height: 100%;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    height: 100%;
+    width: 20rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    @include respond(smmd) {
+      width: 32rem !important;
+    }
+
+    @include respond(xl) {
+      flex: 1;
+    }
+
+    &:hover img {
+      filter: grayscale(0);
+    }
+
+    &:last-child {
+      margin-left: 4rem;
+    }
+
+    .img-4 {
+      height: 4rem !important;
+    }
+
+    .img-5 {
+      height: 4rem !important;
+    }
+  }
+}

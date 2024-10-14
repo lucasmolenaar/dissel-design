@@ -1,4 +1,5 @@
 import CaseCard from '../components/CaseCard';
+import LogoSlider from '../components/LogoSlider';
 import ProjectCard from '../components/ProjectCard';
 import SectionTitle from '../components/SectionTitle';
 import Grid from '../layouts/Grid';
@@ -87,6 +88,10 @@ const Projects = () => {
               image='/images/cases/inprogress/inprogress-image.webp'
             />
           </ul>
+        </div>
+
+        <div className='projects__logos'>
+          <LogoSlider />
         </div>
       </Grid>
     </section>
