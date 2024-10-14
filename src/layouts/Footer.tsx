@@ -89,12 +89,6 @@ const Footer = () => {
                     Edition
                   </a>
                 </li>
-                <li>
-                  <a href='/projects/marktzicht'>
-                    <IoIosArrowRoundForward color='#888888' size={20} />
-                    Marktzicht
-                  </a>
-                </li>
               </ul>
             </li>
 
@@ -108,37 +102,25 @@ const Footer = () => {
                 <li>
                   <a href='/cases/1'>
                     <IoIosArrowRoundForward color='#888888' size={20} />
-                    Case 1
+                    Marktzicht
                   </a>
                 </li>
                 <li>
                   <a href='/cases/1'>
                     <IoIosArrowRoundForward color='#888888' size={20} />
-                    Case 4
+                    Dutch Technology Experts
                   </a>
                 </li>
                 <li>
                   <a href='/cases/1'>
                     <IoIosArrowRoundForward color='#888888' size={20} />
-                    Case 2
+                    De MuziekSpeelplaats
                   </a>
                 </li>
                 <li>
                   <a href='/cases/1'>
                     <IoIosArrowRoundForward color='#888888' size={20} />
-                    Case 5
-                  </a>
-                </li>
-                <li>
-                  <a href='/cases/1'>
-                    <IoIosArrowRoundForward color='#888888' size={20} />
-                    Case 3
-                  </a>
-                </li>
-                <li>
-                  <a href='/cases/1'>
-                    <IoIosArrowRoundForward color='#888888' size={20} />
-                    Case 6
+                    16.08 Streetwear
                   </a>
                 </li>
               </ul>

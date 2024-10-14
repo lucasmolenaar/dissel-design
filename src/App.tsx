@@ -1,21 +1,18 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-// import Navbar from './layouts/Navbar';
-import Footer from './layouts/Footer';
+// import Footer from './layouts/Footer';
 import Project from './pages/Project';
 
 const App = () => {
   return (
     <>
-      {/* <Navbar /> */}
-
       <Routes>
         <Route path='/' element={<Home />} />
 
         <Route path='/project/:slug' element={<Project />} />
       </Routes>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
