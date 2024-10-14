@@ -18,6 +18,14 @@
     padding: 3.2rem 2.4rem;
   }
 
+  &:hover {
+    svg {
+      path {
+        fill: #fafafa;
+      }
+    }
+  }
+
   &__top {
     display: flex;
     align-items: center;
@@ -37,6 +45,10 @@
       @include respond(xl) {
         font-size: 4rem;
       }
+    }
+
+    svg {
+      transition: all 0.2s;
     }
   }
 

@@ -1,17 +1,22 @@
+import { ReactElement } from 'react';
 import { motion } from 'framer-motion';
 
 import SectionTitle from '../components/SectionTitle';
 import ServiceCard from '../components/ServiceCard';
 import Grid from '../layouts/Grid';
 
-import IconUX from '/svg/ux.svg';
-import IconDesign from '/svg/webdesign.svg';
-import IconDevelopment from '/svg/development.svg';
+// import IconUX from '/svg/ux.svg';
+// import IconDesign from '/svg/webdesign.svg';
+// import IconDevelopment from '/svg/development.svg';
 import BigSpin from '/svg/big-spin.svg';
+
+import UX from '../components/logos/UX';
+import Design from '../components/logos/Design';
+import Development from '../components/logos/Development';
 
 interface Card {
   title: string;
-  icon: string;
+  icon: ReactElement | string;
   text: string;
   items: string[];
   bgColor: string;
@@ -21,7 +26,7 @@ const Services = () => {
   const cards: Card[] = [
     {
       title: 'UX-Research',
-      icon: IconUX,
+      icon: <UX />,
       text: 'Richt zicht op het begrijpen van de behoeften, gedragingen, en verwachtingen van gebruikers om een gebruiksvriendelijke website te creëren.',
       items: [
         'Gebruikersinterviews & enquetes.',
@@ -30,11 +35,11 @@ const Services = () => {
         'Competitief analyse.',
         'Usability of A/B testing.',
       ],
-      bgColor: '#58C556',
+      bgColor: '#059053',
     },
     {
       title: 'Webdesign',
-      icon: IconDesign,
+      icon: <Design />,
       text: 'Jouw visie omzetten in een aansprekend design voor website, app, webshop of andere online omgeving. Zodat jouw werk online kan schitteren.',
       items: [
         'Informatie architectuur.',
@@ -44,11 +49,11 @@ const Services = () => {
         'Figma Prototyping.',
         'Design Systems.',
       ],
-      bgColor: '#1DA4FF',
+      bgColor: '#2A34D8',
     },
     {
       title: 'Development',
-      icon: IconDevelopment,
+      icon: <Development />,
       text: 'Het proces van het creëren en bouwen van de website. De visuele en functionele kant die de gebruikers zien en gebruiken.',
       items: [
         'Codering.',

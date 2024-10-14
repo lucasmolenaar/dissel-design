@@ -41,7 +41,8 @@ const ServiceCard: React.FC<CardProps> = ({
       onMouseOut={handleMouseOut}
     >
       <div className='service-card__top'>
-        <img src={icon} alt={`${title} - icon`} />
+        {/* <img src={icon} alt={`${title} - icon`} /> */}
+        {icon}
         <h3>{title}</h3>
       </div>
 
