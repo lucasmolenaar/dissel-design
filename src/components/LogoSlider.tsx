@@ -11,6 +11,7 @@ import MSP from '/images/logos/MSP.png';
 import DTX from '/images/logos/DTX.png';
 import I1608 from '/images/logos/16-08.png';
 import MZ from '/images/logos/MZ.png';
+// import HAG from '/images/logos/HAG.png';
 
 const LogoSlider = () => {
   const logos = [ZD, NE, MSP, DTX, I1608, MZ];

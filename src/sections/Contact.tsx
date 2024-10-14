@@ -18,18 +18,41 @@ const Contact = () => {
               kijk ernaar uit om met je in gesprek te gaan.
             </p>
 
-            <div className='contact__persona'>
-              <div className='contact__persona-image'></div>
+            <div className='contact__persona-container'>
+              <div className='contact__persona'>
+                <div className='contact__persona-image'></div>
 
-              <div className='contact__persona-info'>
-                <p className='contact__persona-name'>Tim Disseldorp</p>
-                <p className='contact__persona-function'>Product Designer</p>
-                <a href='#' className='contact__persona-mail'>
-                  <div className='contact__persona-icon'>
-                    <img src={Mail} alt='Mail' />
-                  </div>
-                  Get in Touch!
-                </a>
+                <div className='contact__persona-info'>
+                  <p className='contact__persona-name'>Tim Disseldorp</p>
+                  <p className='contact__persona-function'>Product Designer</p>
+                  <a
+                    href='mailto:info@disseldesign.nl'
+                    className='contact__persona-mail'
+                  >
+                    <div className='contact__persona-icon'>
+                      <img src={Mail} alt='Mail' />
+                    </div>
+                    Get in Touch!
+                  </a>
+                </div>
+              </div>
+
+              <div className='contact__persona'>
+                <div className='contact__persona-image'></div>
+
+                <div className='contact__persona-info'>
+                  <p className='contact__persona-name'>Lucas Molenaar</p>
+                  <p className='contact__persona-function'>Product Designer</p>
+                  <a
+                    href='mailto:info@disseldesign.nl'
+                    className='contact__persona-mail'
+                  >
+                    <div className='contact__persona-icon'>
+                      <img src={Mail} alt='Mail' />
+                    </div>
+                    Get in Touch!
+                  </a>
+                </div>
               </div>
             </div>
           </div>
