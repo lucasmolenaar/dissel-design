@@ -1,0 +1,109 @@
+.footernew {
+  font-family: $font-secondary;
+  padding-bottom: 8rem;
+
+  &__container {
+    grid-column: content-start / content-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond(smmd) {
+      display: grid;
+      grid-template-columns: min-content min-content 1fr;
+      align-items: end;
+      gap: 9.4rem;
+    }
+  }
+
+  &__socials {
+    &-logo {
+      height: 30rem;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 4rem;
+      margin-top: 3.2rem;
+
+      @include respond(smmd) {
+        margin-bottom: 0;
+      }
+
+      li {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 2px solid rgba($color: $color-white, $alpha: 0.3);
+
+        @include respond(mdlg) {
+          width: 6rem;
+          height: 6rem;
+        }
+
+        &:hover {
+          background-color: #0183b9;
+          border-color: rgba($color: $color-white, $alpha: 0.3);
+
+          img {
+            transform: scale(1.2); // Adjust scale value as needed
+            transition: transform 0.2s;
+          }
+        }
+
+        a {
+          @include flexCenter;
+          width: 100%;
+          height: 100%;
+
+          img {
+            transition: all 0.2s;
+            @include respond(mdlg) {
+              width: 2.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__data {
+    width: 26rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 1.2rem;
+    margin-bottom: 4rem;
+
+    @include respond(smmd) {
+      margin-bottom: 0;
+    }
+
+    p {
+      color: #a0a0a0;
+
+      strong {
+        color: $color-white;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__copy {
+    &-container {
+      grid-column: content-start / content-end;
+      margin: 0 auto;
+      text-align: center;
+
+      @include respond(smmd) {
+        margin-top: 4rem;
+      }
+
+      @include respond(md) {
+        margin-top: 8rem;
+      }
+    }
+  }
+}
