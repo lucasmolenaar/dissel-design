@@ -529,6 +529,7 @@
         background-color: rgba($color: $color-white, $alpha: 0.1);
         border-radius: 1.2rem;
         margin-bottom: 2.4rem;
+        object-fit: cover;
 
         @include respond(sm) {
           height: 54vw;

@@ -16,8 +16,7 @@ const Projects = () => {
             year={'JUN 2024'}
             large
             image={'/images/home/hp_hero-ziggodome.webp'}
-            bottomTitle={'Lorem ipsum'}
-            bottomSubtitle={'Mobile first'}
+            bottomTitle={'Het optimaliseren van de online ervaring'}
             ux
             design
             dev
@@ -29,8 +28,7 @@ const Projects = () => {
             topTitle={'New Edition'}
             year={'JAN 2024'}
             image={'/images/home/hp_hero_newedition.webp'}
-            bottomTitle={'Redesign'}
-            bottomSubtitle={'Driven by living'}
+            bottomTitle={'Visuele identiteit optimaliseren voor betere UX.'}
             ux
             design
             color='#7E7469'

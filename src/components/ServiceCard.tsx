@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 import useScreenWidth from '../hooks/useScreenWidth';
 import ListItem from '/svg/list-item.svg';
 
 interface CardProps {
   title: string;
-  icon: string;
+  icon: ReactElement;
   text: string;
   items: string[];
   bgColor: string;

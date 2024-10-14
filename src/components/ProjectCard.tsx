@@ -7,7 +7,6 @@ interface CardProps {
   large?: boolean;
   image: string;
   bottomTitle: string;
-  bottomSubtitle: string;
   ux?: boolean;
   design?: boolean;
   dev?: boolean;
@@ -21,7 +20,6 @@ const ProjectCard: React.FC<CardProps> = ({
   large,
   image,
   bottomTitle,
-  bottomSubtitle,
   ux,
   design,
   dev,
@@ -59,7 +57,6 @@ const ProjectCard: React.FC<CardProps> = ({
 
         <div className='project-card__bottom-content'>
           <p className='project-card__bottom-title'>{bottomTitle}</p>
-          <p className='project-card__bottom-subtitle'>{bottomSubtitle}</p>
 
           <div className='project-card__bottom-labels'>
             {ux && (

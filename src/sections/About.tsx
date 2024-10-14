@@ -86,7 +86,7 @@ const About = () => {
         <div className='about__grid'>
           <div className='about__image'>
             <img
-              src='/images/home/tim-slider1.jpg'
+              src='/images/home/tim-slider1.webp'
               alt='Tim Disseldorp, Dissel Design'
             />
           </div>

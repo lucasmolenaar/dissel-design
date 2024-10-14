@@ -4,10 +4,6 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../components/SectionTitle';
 import ServiceCard from '../components/ServiceCard';
 import Grid from '../layouts/Grid';
-
-// import IconUX from '/svg/ux.svg';
-// import IconDesign from '/svg/webdesign.svg';
-// import IconDevelopment from '/svg/development.svg';
 import BigSpin from '/svg/big-spin.svg';
 
 import UX from '../components/logos/UX';
@@ -16,7 +12,7 @@ import Development from '../components/logos/Development';
 
 interface Card {
   title: string;
-  icon: ReactElement | string;
+  icon: ReactElement;
   text: string;
   items: string[];
   bgColor: string;
