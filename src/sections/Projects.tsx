@@ -58,32 +58,32 @@ const Projects = () => {
             <CaseCard
               caseName={'Marktzicht'}
               label={'Restaurant'}
-              image='/images/cases/Marktzicht/Marktzicht-slider1.webp'
+              image='/images/Cases/Marktzicht/Marktzicht-slider1.webp'
             />
             <CaseCard
               caseName={'De MuziekSpeelplaats'}
               label={'Stichting'}
-              image='/images/cases/MSP/MSP-slider-slider1.webp'
+              image='/images/Cases/MSP/MSP-slider-slider1.webp'
             />
             <CaseCard
               caseName={'16.08 Streetwear'}
               label={'Webshop'}
-              image='/images/cases/16.08/16.08-slider-slider1.webp'
+              image='/images/Cases/16.08/16.08-slider-slider1.webp'
             />
             <CaseCard
               caseName={'Dutch Technology Experts'}
               label={'IT Bedrijf'}
-              image='/images/cases/DTX/dtx-slider-slider1.webp'
+              image='/images/Cases/DTX/dtx-slider-slider1.webp'
             />
             <CaseCard
               caseName={'In progress'}
               label={''}
-              image='/images/cases/inprogress/inprogress-image.webp'
+              image='/images/Cases/inprogress/inprogress-image.webp'
             />
             <CaseCard
               caseName={'In progress'}
               label={''}
-              image='/images/cases/inprogress/inprogress-image.webp'
+              image='/images/Cases/inprogress/inprogress-image.webp'
             />
           </ul>
         </div>
