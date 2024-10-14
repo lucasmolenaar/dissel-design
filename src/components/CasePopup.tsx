@@ -21,22 +21,22 @@ interface PopupProps {
 
 const CasePopup: React.FC<PopupProps> = ({ setCaseOpen, title }) => {
   const [selectedCase, setSelectedCase] = useState<Case | undefined>();
-  const [typeColor, setTypeColor] = useState('#fafafa');
+  // const [typeColor, setTypeColor] = useState('#fafafa');
   const swiperRef = useRef<SwiperType | null>(null);
 
   useEffect(() => {
     const foundCase = cases.find((singleCase) => singleCase.title === title);
-    const color =
-      foundCase?.type === 'UX-Research'
-        ? '#58c556'
-        : foundCase?.type === 'Design'
-        ? '#1da4ff'
-        : foundCase?.type === 'Development'
-        ? '#743ecc'
-        : '#fafafa';
+    // const color =
+    //   foundCase?.type === 'UX-Research'
+    //     ? '#58c556'
+    //     : foundCase?.type === 'Design'
+    //     ? '#1da4ff'
+    //     : foundCase?.type === 'Development'
+    //     ? '#743ecc'
+    //     : '#fafafa';
 
     setSelectedCase(foundCase);
-    setTypeColor(color);
+    // setTypeColor(color);
   }, [selectedCase]);
 
   useEffect(() => {
@@ -142,8 +142,8 @@ const CasePopup: React.FC<PopupProps> = ({ setCaseOpen, title }) => {
                 <span>Type</span>
                 <p
                   style={{
-                    color: typeColor,
-                    borderColor: typeColor,
+                    color: '#61ABFF',
+                    borderColor: '#61ABFF',
                   }}
                 >
                   {selectedCase?.type}
