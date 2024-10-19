@@ -67,7 +67,7 @@ const Hero = () => {
               'Creatieve'
             ) : (
               <Typewriter
-                words={['Creatieve', 'Innovatieve']}
+                words={['Creative', 'Innovative', 'Passionate']}
                 cursor
                 loop
                 typeSpeed={160}
