@@ -38,11 +38,16 @@ const Contact = () => {
               </div>
 
               <div className='contact__persona'>
-                <div className='contact__persona-image'></div>
+                <div className='contact__persona-image'>
+                  <img
+                    src='/images/home/lucas.webp'
+                    alt='Lucas Molenaar, Developer, Dissel Design'
+                  />
+                </div>
 
                 <div className='contact__persona-info'>
                   <p className='contact__persona-name'>Lucas Molenaar</p>
-                  <p className='contact__persona-function'>Product Designer</p>
+                  <p className='contact__persona-function'>Developer</p>
                   <a
                     href='mailto:info@disseldesign.nl'
                     className='contact__persona-mail'

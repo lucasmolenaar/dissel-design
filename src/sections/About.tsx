@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { FiDownload } from 'react-icons/fi';
 
 import 'swiper/css';
@@ -86,7 +86,7 @@ const About = () => {
         <div className='about__grid'>
           <div className='about__image'>
             <img
-              src='/images/home/tim-slider1.webp'
+              src='/images/home/over-mij.webp'
               alt='Tim Disseldorp, Dissel Design'
             />
           </div>
@@ -233,7 +233,7 @@ const About = () => {
               ))}
             </ul>
 
-            <a href={PDF} download className='about__experience-resume'>
+            <a href={PDF} target='_blank' className='about__experience-resume'>
               Resume <FiDownload color='#fafafa' />
             </a>
           </div>
@@ -241,15 +241,44 @@ const About = () => {
           <div className='about__carousel'>
             <Swiper
               pagination={true}
-              modules={[Pagination]}
+              modules={[Pagination, Autoplay]}
               className='mySwiper'
               loop
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
             >
               <SwiperSlide>
-                <img src='/images/home/tim-ydm.jpg' alt='Dissel Design 1' />
+                <img
+                  src='/images/home/tim-slider1.webp'
+                  alt='Dissel Design 1'
+                />
               </SwiperSlide>
-              <SwiperSlide>Image 2</SwiperSlide>
-              <SwiperSlide>Image 3</SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='/images/home/tim-slider2.webp'
+                  alt='Dissel Design 2'
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='/images/home/tim-slider3.webp'
+                  alt='Dissel Design 3'
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='/images/home/tim-slider4.webp'
+                  alt='Dissel Design 4'
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='/images/home/tim-slider5.webp'
+                  alt='Dissel Design 5'
+                />
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>

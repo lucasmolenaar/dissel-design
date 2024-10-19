@@ -101,7 +101,12 @@ const Services = () => {
                 </p>
               </div>
 
-              <div className='services__quote-image'></div>
+              <div className='services__quote-image'>
+                <img
+                  src='/images/home/bovenste-foto-tim.webp'
+                  alt='Tim Disseldorp, Dissel Design'
+                />
+              </div>
             </div>
           </Grid>
         </div>

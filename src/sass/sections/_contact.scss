@@ -58,6 +58,7 @@
     }
 
     &-image {
+      position: relative;
       width: 7.2rem;
       height: 7.2rem;
       background-color: grey;
@@ -66,6 +67,15 @@
       @include respond(mdlg) {
         width: 9rem;
         height: 9rem;
+      }
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
       }
     }
 
