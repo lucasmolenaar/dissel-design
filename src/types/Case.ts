@@ -6,4 +6,6 @@ export interface Case {
   type: string;
   description: string;
   images: string[];
+  listTitle: string;
+  list: string[];
 }

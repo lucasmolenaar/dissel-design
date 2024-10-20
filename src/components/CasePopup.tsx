@@ -152,10 +152,24 @@ const CasePopup: React.FC<PopupProps> = ({ setCaseOpen, title }) => {
             </div>
 
             <div className='case-popup__overview'>
-              <span className='case-popup__overview-title'>Omschrijving</span>
+              <span className='case-popup__overview-title'>Samenvatting</span>
+              <br />
               <p className='case-popup__overview-text'>
                 {selectedCase?.description}
               </p>
+
+              <br />
+              <br />
+
+              <span className='case-popup__overview-title'>
+                {selectedCase?.listTitle}
+              </span>
+              <br />
+              <ul className='case-popup__overview-list'>
+                {selectedCase?.list.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             </div>
           </motion.div>
         </div>

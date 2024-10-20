@@ -10,6 +10,16 @@
       "/images/Cases/Marktzicht/Marktzicht-slider1.webp",
       "/images/Cases/Marktzicht/Marktzicht-slider2.webp",
       "/images/Cases/Marktzicht/Marktzicht-slider3.webp"
+    ],
+    "listTitle": "Hoogtepunten",
+    "list": [
+      "Mobile first-ontwerp",
+      "Gebruik van bestaand logo en nieuwe huisstijl",
+      "CMS-integratie voor zelfbeheer van het menu",
+      "Herindeling van de informatiearchitectuur en duidelijke sitemap",
+      "Gebruik van beeldmateriaal van social media",
+      "Gemakkelijk en laagdrempelig reserveringsproces",
+      "Schrijven van nieuwe content voor de website"
     ]
   },
   {
@@ -25,6 +35,15 @@
       "/images/Cases/MSP/MSP-slider-slider3.webp",
       "/images/Cases/MSP/MSP-slider-slider4.webp",
       "/images/Cases/MSP/MSP-slider-slider5.webp"
+    ],
+    "listTitle": "Onze uitdagingen",
+    "list": [
+      "Het aanspreken van fondsen, donateurs en gemeentes, die diverse behoeften hebben, en balanceren van zakelijke informatie met kindgerichte content.",
+      "Het ontwerpen van een heldere en gebruiksvriendelijke navigatiestructuur voor alle groepen in essentieel.",
+      "De site moet aantrekkelijk zijn diverse doelgroepen, maar ook voor kinderen moet het ontwerp speels en creatief zijn.",
+      "De website moet voor iedereen toegankelijk zijn, inclusief mensen met visuele of cognitieve beperkingen.",
+      "Ouders moeten zich niet alleen geïnformeerd voelen, maar ook betrokken raken. Dit kan via updates over evenementen en communitygedeelte waar ervaringen kunnen delen.",
+      "De call-to-actions (zoals \"doneren\", \"steun ons\", \"meld je kind aan\") moeten effectief zijn zonder te opdringerig te zijn. Het vinden van de juiste toon kan een uitdaging zijn."
     ]
   },
   {
@@ -39,6 +58,12 @@
       "/images/Cases/16.08/16.08-slider-slider2.webp",
       "/images/Cases/16.08/16.08-slider-slider3.webp",
       "/images/Cases/16.08/16.08-slider-slider4.webp"
+    ],
+    "listTitle": "Hoogtepunten",
+    "list": [
+      "Om de gebruikersflow van de 16.08 website te verbeteren, pas ik de job stories-methode toe. Dit helpt om de context en motivatie van de gebruiker te begrijpen en gerichte oplossingen te bieden voor een betere ervaring.",
+      "Een brand identiteit ontwikkeld, vastgelegd in het huisstijlhandboek. Dit bevat het logo, kleurgebruik, typografie, iconen, en uitgewerkte button states, evenals invoervelden, web-elementen en illustraties, met aandacht voor de implementatie door developers.",
+      "Er zijn micro-interacties ontwikkeld en geïntegreerd in de webshop om gebruikerservaring soepeler en intuïtiever te maken."
     ]
   },
   {
@@ -53,6 +78,14 @@
       "/images/Cases/DTX/dtx-slider-slider2.webp",
       "/images/Cases/DTX/dtx-slider-slider3.webp",
       "/images/Cases/DTX/dtx-slider-slider4.webp"
+    ],
+    "listTitle": "Hoogtepunten",
+    "list": [
+      "Klantwensen: Betrouwbare uitstraling, duidelijke diensten, subtiele iconen, gebruiksvriendelijke CTA’s en speelsere elementen.",
+      "Concurrentieanalyse: Vergelijking van UX-elementen bij concurrenten om sterke en zwakke punten te identificeren.",
+      "Wireframes: Functionele opzet en hiërarchie van informatie en functionaliteiten.",
+      "Styleguide: Regels voor kleur, typografie en consistent gebruik van elementen.",
+      "Laatste iteratie: Uitwerking van de homepage in een HIFI-prototype."
     ]
   },
   {
@@ -62,6 +95,8 @@
     "year": "",
     "type": "",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nesciunt at dolore doloribus debitis odit quod fugiat, quaerat consequatur ea laboriosam quibusdam ex, sed soluta labore? Ab, velit commodi est ipsa quaerat dolorum quis provident labore porro atque vel quae aliquid inventore, ex eveniet qui vitae distinctio aliquam dolore tenetur dignissimos impedit sequi asperiores? Iste, necessitatibus, ex nam accusamus nesciunt illo rerum facilis ullam quos nisi et maiores mollitia quia tempora dolor laborum dolores, a officiis quo eveniet dolore libero. Omnis est explicabo blanditiis ad nobis! Esse praesentium perferendis hic saepe quam quidem quos vel voluptatem eum repudiandae incidunt ex temporibus magnam ullam alias consectetur, optio tempora dolore voluptas sunt commodi! Est rem quibusdam cum, incidunt architecto quis sint animi laborum repellat nam impedit veritatis fugiat, dolorem iste sequi officiis eveniet praesentium exercitationem aspernatur laudantium repudiandae. Illo iure accusantium illum porro quisquam tenetur, quia nam tempora voluptatum corrupti minima quidem qui vero blanditiis quis. Laboriosam, iure praesentium vero consectetur explicabo molestias tempore aspernatur omnis officiis esse quia perspiciatis voluptates neque quidem in architecto maxime sed officia aperiam nostrum animi eius recusandae sint. Excepturi velit modi eligendi, temporibus mollitia doloribus reiciendis, quis sapiente totam molestias impedit doloremque voluptatem officiis aperiam deserunt.",
-    "images": ["/images/Cases/inprogress/inprogress-image.webp"]
+    "images": ["/images/Cases/inprogress/inprogress-image.webp"],
+    "listTitle": "",
+    "list": [""]
   }
 ]

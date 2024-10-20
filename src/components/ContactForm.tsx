@@ -1,10 +1,65 @@
+import { useRef, useState } from 'react';
+import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
+
 const ContactForm = () => {
+  const form = useRef<HTMLFormElement>(null);
+  const [submitted, setSubmitted] = useState<boolean>(false);
+  const [message, setMessage] = useState<string>('');
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const sendEmail = () => {
+    if (form.current) {
+      emailjs
+        .sendForm('service_bvcsvxs', 'template_op6djd9', form.current, {
+          publicKey: 'uClwHGao-IKePcy9A',
+        })
+        .then(
+          () => {
+            form.current?.reset();
+            setSubmitted(true);
+          },
+          () => {
+            setMessage(
+              'Er is iets fout gegaan. Probeer het later nog een keer.'
+            );
+          }
+        );
+    }
+  };
+
+  const onSubmit = () => {
+    sendEmail();
+  };
+
+  if (message) return <p>{message}</p>;
+
+  if (submitted)
+    return (
+      <p className='contactform__success'>
+        Bedankt voor het invullen van het formulier! We nemen zo snel mogelijk
+        contact met je op.
+      </p>
+    );
+
   return (
-    <form className='contactform'>
+    <form className='contactform' onSubmit={handleSubmit(onSubmit)} ref={form}>
       <div className='contactform__group'>
         <label htmlFor='fname'>Voornaam</label>
         <div className='contactform__inputwrapper'>
-          <input type='text' id='fname' placeholder='Jouw voornaam' />
+          <input
+            {...register('fname', {
+              required: 'Voornaam is verplicht',
+            })}
+            type='text'
+            id='fname'
+            placeholder='Jouw voornaam'
+            className={errors.fname ? 'inputerror' : ''}
+          />
         </div>
       </div>
 
@@ -12,14 +67,34 @@ const ContactForm = () => {
         <label htmlFor='lname'>Achternaam</label>
 
         <div className='contactform__inputwrapper'>
-          <input type='text' id='lname' placeholder='Jouw achternaam' />
+          <input
+            {...register('lname', {
+              required: 'Achternaam is verplicht',
+            })}
+            type='text'
+            id='lname'
+            placeholder='Jouw achternaam'
+            className={errors.lname ? 'inputerror' : ''}
+          />
         </div>
       </div>
 
       <div className='contactform__group'>
         <label htmlFor='email'>E-mail</label>
         <div className='contactform__inputwrapper'>
-          <input type='email' id='email' placeholder='Jouw e-mailadres' />
+          <input
+            {...register('email', {
+              required: 'E-mailadres is verplicht',
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: 'Ongeldig e-mailadres',
+              },
+            })}
+            type='email'
+            id='email'
+            placeholder='Jouw e-mailadres'
+            className={errors.email ? 'inputerror' : ''}
+          />
         </div>
       </div>
 
@@ -29,9 +104,13 @@ const ContactForm = () => {
         </label>
         <div className='contactform__textareawrapper'>
           <textarea
-            id='email'
-            placeholder='bijv; redesign van uw website of het creëren van een hele nieuwe site...'
+            id='message'
+            placeholder='bijv; redesign van je website of het creëren van een hele nieuwe site...'
             rows={7}
+            {...register('message', {
+              required: 'Bericht is verplicht',
+            })}
+            className={errors.message ? 'inputerror' : ''}
           />
         </div>
       </div>

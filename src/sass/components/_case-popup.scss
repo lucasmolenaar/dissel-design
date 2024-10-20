@@ -260,7 +260,7 @@
     &-title {
       display: block;
       font-family: $font-tertiary;
-      color: rgba($color: $color-white, $alpha: 0.5);
+      color: $color-white;
       text-transform: uppercase;
       font-size: 1.2rem;
       margin-bottom: 0.4rem;
@@ -270,14 +270,24 @@
       }
     }
 
-    &-text {
+    &-text,
+    &-list {
       font-size: 1.4rem;
       line-height: 2rem;
+      color: #929292;
 
       @include respond(smmd) {
         font-size: 1.5rem;
         line-height: 2.2rem;
       }
+    }
+
+    &-list {
+      list-style: circle;
+      padding-left: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
     }
   }
 }

@@ -57,9 +57,14 @@
       color: $color-white;
       outline: none;
       font-size: 1.6rem;
+      transition: all 0.2s;
 
       @include respond(mdlg) {
         font-size: 2rem;
+      }
+
+      &.inputerror {
+        border-color: red;
       }
     }
   }
@@ -88,6 +93,7 @@
     font-family: $font-secondary;
     font-size: 1.6rem;
     margin-top: 0.4rem;
+    cursor: pointer;
 
     @include respond(mdlg) {
       margin-top: 1.2rem;
@@ -104,6 +110,15 @@
       top: 2.4rem;
       z-index: 9;
       color: $color-white;
+    }
+  }
+
+  &__success {
+    font-family: $font-secondary;
+
+    @include respond(md) {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
     }
   }
 }

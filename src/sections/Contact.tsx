@@ -20,7 +20,12 @@ const Contact = () => {
 
             <div className='contact__persona-container'>
               <div className='contact__persona'>
-                <div className='contact__persona-image'></div>
+                <div className='contact__persona-image'>
+                  <img
+                    src='/images/home/tim.webp'
+                    alt='Lucas Molenaar, Developer, Dissel Design'
+                  />
+                </div>
 
                 <div className='contact__persona-info'>
                   <p className='contact__persona-name'>Tim Disseldorp</p>
