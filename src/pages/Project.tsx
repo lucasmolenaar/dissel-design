@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 import Grid from '../layouts/Grid';
 import { IProject } from '../types/Project';
@@ -40,6 +41,10 @@ const Project = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{`Dissel Design - ${project?.title}`}</title>
+      </Helmet>
+
       <ProjectNav />
 
       <main className='project'>
