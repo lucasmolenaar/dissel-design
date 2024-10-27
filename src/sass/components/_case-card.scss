@@ -71,21 +71,25 @@
     margin-top: auto;
     padding: 2.4rem;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     z-index: 0;
 
     &-title {
       font-family: $font-secondary;
       font-size: 2rem;
-      font-weight: 300;
+      font-weight: 400;
     }
 
     &-label {
       font-family: $font-tertiary;
-      font-size: 2rem;
+      font-size: 1.6rem;
       color: rgba($color: $color-white, $alpha: 0.3);
       text-transform: uppercase;
+
+      @include respond(mdlg) {
+        font-size: 1.8rem;
+      }
     }
 
     &.center {

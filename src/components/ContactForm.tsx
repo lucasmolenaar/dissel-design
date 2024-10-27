@@ -6,6 +6,8 @@ const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
   const [submitted, setSubmitted] = useState<boolean>(false);
   const [message, setMessage] = useState<string>('');
+  const [sending, setSending] = useState<boolean>(false);
+
   const {
     register,
     handleSubmit,
@@ -13,10 +15,12 @@ const ContactForm = () => {
   } = useForm();
 
   const sendEmail = () => {
+    setSending(false);
     if (form.current) {
+      setSending(true);
       emailjs
-        .sendForm('service_bvcsvxs', 'template_op6djd9', form.current, {
-          publicKey: 'uClwHGao-IKePcy9A',
+        .sendForm('service_ve7swns', 'template_z9bpzyh', form.current, {
+          publicKey: 'Ym3GZJITaMIrsCLma',
         })
         .then(
           () => {
@@ -24,6 +28,7 @@ const ContactForm = () => {
             setSubmitted(true);
           },
           () => {
+            setSending(false);
             setMessage(
               'Er is iets fout gegaan. Probeer het later nog een keer.'
             );
@@ -115,7 +120,9 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <button className='contactform__submit'>Verzenden</button>
+      <button className='contactform__submit' disabled={sending}>
+        {sending ? 'Bezig...' : 'Verzenden'}
+      </button>
     </form>
   );
 };

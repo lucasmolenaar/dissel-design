@@ -262,11 +262,15 @@
       font-family: $font-tertiary;
       color: $color-white;
       text-transform: uppercase;
-      font-size: 1.2rem;
-      margin-bottom: 0.4rem;
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
 
       @include respond(smmd) {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+      }
+
+      @include respond(md) {
+        font-size: 1.6rem;
       }
     }
 

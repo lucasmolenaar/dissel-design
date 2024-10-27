@@ -98,6 +98,11 @@
     @include respond(mdlg) {
       margin-top: 1.2rem;
     }
+
+    &:disabled {
+      color: $color-white;
+      cursor: default;
+    }
   }
 
   &__textareawrapper {
