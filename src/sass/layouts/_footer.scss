@@ -84,6 +84,16 @@
       margin-bottom: 0;
     }
 
+    svg {
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      svg {
+        transform: translateY(-2px);
+      }
+    }
+
     &--mobile {
       @include respond(smmd) {
         display: none;
