@@ -1,5 +1,5 @@
 import Grid from './Grid';
-import FooterLogo from '/svg/logo-footer.svg';
+import FooterLogo from '/svg/logo-footer.png';
 import Mail from '/svg/mail.svg';
 import Dribbble from '/svg/dribbble.svg';
 import Instagram from '/svg/insta.svg';

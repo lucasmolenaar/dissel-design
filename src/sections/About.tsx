@@ -176,10 +176,10 @@ const About = () => {
               <br />
               <br />
               Naast mijn werk vind ik balans essentieel. Ik blijf fysiek en
-              mentaal fit door veel te wandelen, hard te lopen en te zwemmen.
-              Deze activiteiten geven me rust en energie, en vormen een perfecte
-              aanvulling op mijn werk. Met passie en toewijding streef ik naar
-              continue groei en ontwikkeling.
+              mentaal fit door veel te wandelen, hard te lopen, te zwemmen en te
+              fitnessen. Deze activiteiten geven me rust en energie, en vormen
+              een perfecte aanvulling op mijn werk. Met passie en toewijding
+              streef ik naar continue groei en ontwikkeling.
             </p>
           </div>
 

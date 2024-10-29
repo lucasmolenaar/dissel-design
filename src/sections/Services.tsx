@@ -53,7 +53,7 @@ const Services = () => {
       text: 'Het proces van het creëren en bouwen van de website. De visuele en functionele kant die de gebruikers zien en gebruiken.',
       items: [
         'Codering.',
-        'Responsive voor elk device..',
+        'Responsive voor elk device.',
         'SEO.',
         'Gebruiksvriendelijke functionaliteiten.',
         'Regelen van een hosting.',

@@ -1,6 +1,15 @@
 .footernew {
   font-family: $font-secondary;
   padding-bottom: 8rem;
+  padding-top: 6rem;
+
+  @include respond(smmd) {
+    padding-top: 8rem;
+  }
+
+  @include respond(mdlg) {
+    padding-top: 4rem;
+  }
 
   &__container {
     grid-column: content-start / content-end;
