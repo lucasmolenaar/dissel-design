@@ -49,6 +49,12 @@
 
     svg {
       transition: all 0.2s;
+
+      @media screen and (max-width: 1024px) {
+        path {
+          fill: $color-white;
+        }
+      }
     }
   }
 
